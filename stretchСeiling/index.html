@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ПотолокПро — Натяжные потолки с установкой за 1 день</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header" id="header">
+    <div class="container header__inner">
+        <a href="#" class="logo">
+            <div class="logo__mark">
+                <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="2" y="14" width="32" height="4" rx="2" fill="currentColor" opacity="0.3"/>
+                    <path d="M4 14C4 14 10 8 18 8C26 8 32 14 32 14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+                    <path d="M8 18V28M28 18V28" stroke="currentColor" stroke-width="2" stroke-linecap="round" opacity="0.4"/>
+                    <circle cx="18" cy="22" r="3" stroke="currentColor" stroke-width="2" fill="none"/>
+                </svg>
+            </div>
+            <span class="logo__text">ПотолокПро</span>
+        </a>
+        <nav class="nav" id="nav">
+            <a href="#types" class="nav__link">Виды потолков</a>
+            <a href="#benefits" class="nav__link">Преимущества</a>
+            <a href="#promo" class="nav__link">Акция</a>
+            <a href="#contacts" class="nav__link">Контакты</a>
+        </nav>
+        <a href="tel:+78001234567" class="header__phone">
+            <svg viewBox="0 0 20 20" fill="none"><path d="M17.924 14.382a1.5 1.5 0 01-1.536 1.486c-1.28-.068-3.7-.52-6.064-2.2-1.904-1.354-3.14-3.104-3.82-4.412-.678-1.31-1.074-2.91-1.126-4.186A1.5 1.5 0 016.864 3.5H8.7a1 1 0 01.998.874c.063.513.18 1.015.347 1.498a1 1 0 01-.262 1.07l-.534.48a10.097 10.097 0 003.33 4.244l.544-.432a1 1 0 011.08-.166c.5.228 1.026.396 1.566.501a1 1 0 01.808 1.013l-.052 1.8z" stroke="currentColor" stroke-width="1.5"/></svg>
+            <span>8 (800) 123-45-67</span>
+        </a>
+        <button class="burger" id="burger" aria-label="Меню">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</header>
+
+<!-- BLOCK 1: HERO -->
+<section class="hero" id="hero">
+    <div class="hero__bg">
+        <div class="hero__grid-pattern"></div>
+    </div>
+    <div class="container hero__inner">
+        <div class="hero__content">
+            <div class="hero__badge">
+                <span class="hero__badge-dot"></span>
+                Замер и расчёт — бесплатно
+            </div>
+            <h1 class="hero__title">Натяжной потолок <span class="hero__highlight">за 1 день</span> — без пыли и мебели</h1>
+            <p class="hero__subtitle">Матовые, глянцевые и тканевые потолки от 290 ₽/м². Монтаж за 2–4 часа, гарантия 12 лет. Более 3 000 выполненных заказов.</p>
+            <div class="hero__actions">
+                <a href="#contacts" class="btn btn--primary btn--lg">
+                    Вызвать замерщика бесплатно
+                    <svg class="btn__icon" viewBox="0 0 20 20" fill="none"><path d="M4 10h12m0 0l-4-4m4 4l-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
+                <a href="#types" class="btn btn--ghost btn--lg">Смотреть цены</a>
+            </div>
+            <div class="hero__trust">
+                <div class="hero__trust-item">
+                    <svg viewBox="0 0 20 20" fill="none"><path d="M10 1l2.39 4.843 5.346.777-3.868 3.77.913 5.324L10 13.347l-4.781 2.367.913-5.324-3.868-3.77 5.346-.777L10 1z" fill="currentColor"/></svg>
+                    <span>4.9 на Яндекс</span>
+                </div>
+                <div class="hero__trust-divider"></div>
+                <div class="hero__trust-item">
+                    <svg viewBox="0 0 20 20" fill="none"><path d="M16.667 10H13.333L11.667 16.667L8.333 3.333L6.667 10H3.333" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    <span>3 000+ заказов</span>
+                </div>
+                <div class="hero__trust-divider"></div>
+                <div class="hero__trust-item">
+                    <svg viewBox="0 0 20 20" fill="none"><path d="M10 18.333A8.333 8.333 0 1010 1.667a8.333 8.333 0 000 16.666z" stroke="currentColor" stroke-width="1.5"/><path d="M10 5v5l3.333 1.667" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                    <span>Монтаж за 1 день</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero__visual">
+            <div class="hero__room">
+                <svg viewBox="0 0 400 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Room walls -->
+                    <rect x="40" y="60" width="320" height="240" rx="4" fill="#1E293B" opacity="0.05" stroke="#CBD5E1" stroke-width="1"/>
+                    <!-- Ceiling -->
+                    <path d="M40 60H360" stroke="#CBD5E1" stroke-width="1"/>
+                    <rect x="40" y="40" width="320" height="24" rx="4" fill="url(#ceilingGrad)" opacity="0.9"/>
+                    <!-- Ceiling reflection -->
+                    <rect x="60" y="44" width="120" height="6" rx="3" fill="white" opacity="0.3"/>
+                    <rect x="200" y="48" width="60" height="4" rx="2" fill="white" opacity="0.2"/>
+                    <!-- Light fixture -->
+                    <rect x="185" y="64" width="30" height="4" rx="2" fill="#F59E0B" opacity="0.6"/>
+                    <circle cx="200" cy="80" r="12" fill="none" stroke="#F59E0B" stroke-width="1.5" opacity="0.4"/>
+                    <circle cx="200" cy="80" r="4" fill="#F59E0B" opacity="0.5"/>
+                    <!-- Window -->
+                    <rect x="260" y="100" width="80" height="100" rx="4" fill="#DBEAFE" stroke="#CBD5E1" stroke-width="1"/>
+                    <line x1="300" y1="100" x2="300" y2="200" stroke="#CBD5E1" stroke-width="1"/>
+                    <line x1="260" y1="150" x2="340" y2="150" stroke="#CBD5E1" stroke-width="1"/>
+                    <!-- Sofa -->
+                    <rect x="70" y="220" width="140" height="50" rx="8" fill="#7C3AED" opacity="0.15" stroke="#7C3AED" stroke-width="1" stroke-opacity="0.3"/>
+                    <rect x="74" y="210" width="132" height="14" rx="7" fill="#7C3AED" opacity="0.1"/>
+                    <!-- Plant -->
+                    <rect x="240" y="240" width="20" height="40" rx="4" fill="#F59E0B" opacity="0.2"/>
+                    <circle cx="250" cy="230" r="20" fill="#10B981" opacity="0.15"/>
+                    <circle cx="242" cy="222" r="12" fill="#10B981" opacity="0.1"/>
+                    <defs>
+                        <linearGradient id="ceilingGrad" x1="40" y1="40" x2="360" y2="64" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#F59E0B"/>
+                            <stop offset="0.5" stop-color="#EAB308"/>
+                            <stop offset="1" stop-color="#F59E0B"/>
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <div class="hero__room-label">
+                    <span class="hero__room-price">от 290 ₽/м²</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="hero__wave">
+        <svg viewBox="0 0 1440 100" preserveAspectRatio="none"><path d="M0 40L60 35C120 30 240 20 360 22C480 24 600 38 720 45C840 52 960 52 1080 45C1200 38 1320 24 1380 17L1440 10V100H0Z" fill="#ffffff"/></svg>
+    </div>
+</section>
+
+<!-- BLOCK 2: TYPES OF CEILINGS -->
+<section class="types" id="types">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag">Каталог</span>
+            <h2 class="section-title">Виды натяжных потолков</h2>
+            <p class="section-desc">Подберём идеальный вариант под ваш интерьер и бюджет</p>
+        </div>
+        <div class="types__grid">
+
+            <div class="type-card" data-aos>
+                <div class="type-card__visual type-card__visual--matte">
+                    <div class="type-card__texture"></div>
+                    <span class="type-card__label">Матовый</span>
+                </div>
+                <div class="type-card__body">
+                    <h3 class="type-card__title">Матовые потолки</h3>
+                    <p class="type-card__desc">Классический ровный потолок без бликов. Идеален для спальни, детской и гостиной. Визуально неотличим от идеально выровненной штукатурки.</p>
+                    <ul class="type-card__features">
+                        <li>Не бликуют при освещении</li>
+                        <li>Скрывают мелкие неровности</li>
+                        <li>50+ оттенков в наличии</li>
+                    </ul>
+                    <div class="type-card__footer">
+                        <div class="type-card__price">
+                            <span class="type-card__price-label">от</span>
+                            <span class="type-card__price-value">290 ₽</span>
+                            <span class="type-card__price-unit">/ м²</span>
+                        </div>
+                        <a href="#contacts" class="btn btn--primary btn--sm">Заказать</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="type-card type-card--featured" data-aos>
+                <div class="type-card__badge">Популярный</div>
+                <div class="type-card__visual type-card__visual--glossy">
+                    <div class="type-card__texture"></div>
+                    <div class="type-card__shine"></div>
+                    <span class="type-card__label">Глянцевый</span>
+                </div>
+                <div class="type-card__body">
+                    <h3 class="type-card__title">Глянцевые потолки</h3>
+                    <p class="type-card__desc">Зеркальный эффект, который визуально удваивает высоту помещения. Лучший выбор для небольших комнат, ванных и кухонь.</p>
+                    <ul class="type-card__features">
+                        <li>Визуально увеличивают пространство</li>
+                        <li>Отражают свет на 90%</li>
+                        <li>Влагостойкие — подходят для ванной</li>
+                    </ul>
+                    <div class="type-card__footer">
+                        <div class="type-card__price">
+                            <span class="type-card__price-label">от</span>
+                            <span class="type-card__price-value">350 ₽</span>
+                            <span class="type-card__price-unit">/ м²</span>
+                        </div>
+                        <a href="#contacts" class="btn btn--primary btn--sm">Заказать</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="type-card" data-aos>
+                <div class="type-card__visual type-card__visual--fabric">
+                    <div class="type-card__texture"></div>
+                    <span class="type-card__label">Тканевый</span>
+                </div>
+                <div class="type-card__body">
+                    <h3 class="type-card__title">Тканевые потолки</h3>
+                    <p class="type-card__desc">Премиум-сегмент из полиэстера с полиуретановой пропиткой. Дышащий материал без запаха — можно устанавливать в детской с первого дня.</p>
+                    <ul class="type-card__features">
+                        <li>Бесшовные до 5 метров</li>
+                        <li>Экологичный материал</li>
+                        <li>Выдерживают до −40°С</li>
+                    </ul>
+                    <div class="type-card__footer">
+                        <div class="type-card__price">
+                            <span class="type-card__price-label">от</span>
+                            <span class="type-card__price-value">590 ₽</span>
+                            <span class="type-card__price-unit">/ м²</span>
+                        </div>
+                        <a href="#contacts" class="btn btn--primary btn--sm">Заказать</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- BLOCK 3: BENEFITS -->
+<section class="benefits" id="benefits">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag">Почему мы</span>
+            <h2 class="section-title">Работаем так, чтобы вы рекомендовали</h2>
+        </div>
+        <div class="benefits__grid">
+            <div class="benefit" data-aos>
+                <div class="benefit__icon">
+                    <svg viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="14" stroke="currentColor" stroke-width="2"/><path d="M16 10v6l4 2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                </div>
+                <h3 class="benefit__title">Монтаж за 2–4 часа</h3>
+                <p class="benefit__desc">Утром позвонили — вечером новый потолок. Без пыли, грязи и необходимости выносить мебель.</p>
+            </div>
+            <div class="benefit" data-aos>
+                <div class="benefit__icon">
+                    <svg viewBox="0 0 32 32" fill="none"><path d="M16 4l3.09 6.26L26 11.27l-5 4.87 1.18 6.88L16 19.77l-6.18 3.25L11 16.14l-5-4.87 6.91-1.01L16 4z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+                </div>
+                <h3 class="benefit__title">Гарантия 12 лет</h3>
+                <p class="benefit__desc">Письменная гарантия на полотно и монтаж. Бесплатное устранение любых дефектов в гарантийный период.</p>
+            </div>
+            <div class="benefit" data-aos>
+                <div class="benefit__icon">
+                    <svg viewBox="0 0 32 32" fill="none"><rect x="6" y="14" width="20" height="14" rx="3" stroke="currentColor" stroke-width="2"/><path d="M10 14V10a6 6 0 1112 0v4" stroke="currentColor" stroke-width="2"/><circle cx="16" cy="21" r="2" fill="currentColor"/></svg>
+                </div>
+                <h3 class="benefit__title">Защита от потопа</h3>
+                <p class="benefit__desc">Натяжной потолок выдерживает до 100 л воды на 1 м². Спасёт мебель и ремонт при затоплении соседями.</p>
+            </div>
+            <div class="benefit" data-aos>
+                <div class="benefit__icon">
+                    <svg viewBox="0 0 32 32" fill="none"><path d="M4 26h24M8 26V14l8-8 8 8v12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><rect x="13" y="18" width="6" height="8" rx="1" stroke="currentColor" stroke-width="2"/></svg>
+                </div>
+                <h3 class="benefit__title">Выезд в день звонка</h3>
+                <p class="benefit__desc">Замерщик приедет сегодня в удобное время. Привезёт образцы и рассчитает точную стоимость на месте.</p>
+            </div>
+            <div class="benefit" data-aos>
+                <div class="benefit__icon">
+                    <svg viewBox="0 0 32 32" fill="none"><path d="M26 14H6a2 2 0 00-2 2v8a2 2 0 002 2h20a2 2 0 002-2v-8a2 2 0 00-2-2z" stroke="currentColor" stroke-width="2"/><path d="M16 6v8M12 10l4-4 4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="16" cy="20" r="2" stroke="currentColor" stroke-width="2"/></svg>
+                </div>
+                <h3 class="benefit__title">Рассрочка 0%</h3>
+                <p class="benefit__desc">Разбейте оплату на 6 или 12 месяцев без переплат. Оформление за 5 минут, без справок.</p>
+            </div>
+            <div class="benefit" data-aos>
+                <div class="benefit__icon">
+                    <svg viewBox="0 0 32 32" fill="none"><path d="M16 28c6.627 0 12-5.373 12-12S22.627 4 16 4 4 9.373 4 16s5.373 12 12 12z" stroke="currentColor" stroke-width="2"/><path d="M12 16l3 3 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </div>
+                <h3 class="benefit__title">Чистота после монтажа</h3>
+                <p class="benefit__desc">Мастера работают аккуратно и убирают за собой. Мебель не нужно выносить — достаточно сдвинуть от стен.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- BLOCK 4: PROMO -->
+<section class="promo" id="promo">
+    <div class="container">
+        <div class="promo__card" data-aos>
+            <div class="promo__content">
+                <div class="promo__tag">До конца месяца</div>
+                <h2 class="promo__title">Бесплатный замер + скидка 15% на монтаж</h2>
+                <p class="promo__desc">Оставьте заявку сегодня — замерщик приедет бесплатно, покажет образцы материалов и рассчитает стоимость. При заказе до конца месяца — скидка 15% на установку.</p>
+                <div class="promo__features">
+                    <div class="promo__feature">
+                        <svg viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        <span>Замер в удобное время</span>
+                    </div>
+                    <div class="promo__feature">
+                        <svg viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        <span>Образцы на дому</span>
+                    </div>
+                    <div class="promo__feature">
+                        <svg viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        <span>Точный расчёт за 15 минут</span>
+                    </div>
+                    <div class="promo__feature">
+                        <svg viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        <span>Без навязывания услуг</span>
+                    </div>
+                </div>
+                <a href="#contacts" class="btn btn--dark btn--lg">Вызвать замерщика</a>
+            </div>
+            <div class="promo__visual">
+                <div class="promo__discount">
+                    <span class="promo__discount-value">−15%</span>
+                    <span class="promo__discount-label">на монтаж</span>
+                </div>
+                <div class="promo__timer">
+                    <span class="promo__timer-label">Акция действует:</span>
+                    <div class="promo__timer-blocks" id="timer">
+                        <div class="promo__timer-block">
+                            <span class="promo__timer-num" id="timerDays">00</span>
+                            <span class="promo__timer-unit">дн</span>
+                        </div>
+                        <div class="promo__timer-sep">:</div>
+                        <div class="promo__timer-block">
+                            <span class="promo__timer-num" id="timerHours">00</span>
+                            <span class="promo__timer-unit">ч</span>
+                        </div>
+                        <div class="promo__timer-sep">:</div>
+                        <div class="promo__timer-block">
+                            <span class="promo__timer-num" id="timerMinutes">00</span>
+                            <span class="promo__timer-unit">мин</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- BLOCK 5: CONTACTS -->
+<section class="contacts" id="contacts">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag">Заявка</span>
+            <h2 class="section-title">Оставьте заявку на бесплатный замер</h2>
+            <p class="section-desc">Перезвоним за 10 минут и согласуем удобное время визита замерщика</p>
+        </div>
+        <div class="contacts__inner">
+            <form class="form" id="leadForm">
+                <div class="form__row">
+                    <div class="form__group">
+                        <label class="form__label" for="name">Ваше имя</label>
+                        <input class="form__input" type="text" id="name" name="name" placeholder="Как вас зовут?" required>
+                    </div>
+                    <div class="form__group">
+                        <label class="form__label" for="phone">Телефон</label>
+                        <input class="form__input" type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__" required>
+                    </div>
+                </div>
+                <div class="form__row">
+                    <div class="form__group">
+                        <label class="form__label" for="type">Тип потолка</label>
+                        <select class="form__input form__select" id="type" name="type">
+                            <option value="" disabled selected>Выберите тип</option>
+                            <option value="matte">Матовый</option>
+                            <option value="glossy">Глянцевый</option>
+                            <option value="fabric">Тканевый</option>
+                            <option value="unsure">Нужна консультация</option>
+                        </select>
+                    </div>
+                    <div class="form__group">
+                        <label class="form__label" for="area">Площадь помещения</label>
+                        <input class="form__input" type="text" id="area" name="area" placeholder="Например, 18 м²">
+                    </div>
+                </div>
+                <button type="submit" class="btn btn--primary btn--lg btn--full">
+                    <span>Вызвать замерщика бесплатно</span>
+                    <svg class="btn__icon" viewBox="0 0 20 20" fill="none"><path d="M4 10h12m0 0l-4-4m4 4l-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </button>
+                <p class="form__note">Нажимая кнопку, вы соглашаетесь с обработкой персональных данных</p>
+            </form>
+            <div class="contacts__cards">
+                <div class="contacts__card">
+                    <div class="contacts__card-icon">
+                        <svg viewBox="0 0 24 24" fill="none"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="2"/></svg>
+                    </div>
+                    <h4 class="contacts__card-title">Офис</h4>
+                    <p class="contacts__card-text">ул. Потолочная, 12<br>Пн–Сб: 9:00 — 20:00</p>
+                </div>
+                <div class="contacts__card">
+                    <div class="contacts__card-icon">
+                        <svg viewBox="0 0 24 24" fill="none"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" stroke="currentColor" stroke-width="2"/></svg>
+                    </div>
+                    <h4 class="contacts__card-title">Звоните</h4>
+                    <p class="contacts__card-text"><a href="tel:+78001234567">8 (800) 123-45-67</a><br>Бесплатно по РФ</p>
+                </div>
+                <div class="contacts__card">
+                    <div class="contacts__card-icon">
+                        <svg viewBox="0 0 24 24" fill="none"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="currentColor" stroke-width="2"/><path d="M22 6l-10 7L2 6" stroke="currentColor" stroke-width="2"/></svg>
+                    </div>
+                    <h4 class="contacts__card-title">Email</h4>
+                    <p class="contacts__card-text"><a href="mailto:info@potolokpro.ru">info@potolokpro.ru</a><br>Ответим за 1 час</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="container footer__inner">
+        <a href="#" class="logo">
+            <div class="logo__mark logo__mark--dark">
+                <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="2" y="14" width="32" height="4" rx="2" fill="currentColor" opacity="0.3"/>
+                    <path d="M4 14C4 14 10 8 18 8C26 8 32 14 32 14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+                </svg>
+            </div>
+            <span class="logo__text">ПотолокПро</span>
+        </a>
+        <p class="footer__copy">&copy; 2026 ПотолокПро. Все права защищены.</p>
+    </div>
+</footer>
+
+<!-- SUCCESS MODAL -->
+<div class="modal" id="modal">
+    <div class="modal__overlay" id="modalOverlay"></div>
+    <div class="modal__content">
+        <div class="modal__icon">
+            <svg viewBox="0 0 64 64" fill="none"><circle cx="32" cy="32" r="30" stroke="currentColor" stroke-width="3"/><path d="M20 32l8 8 16-16" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <h3 class="modal__title">Заявка принята!</h3>
+        <p class="modal__desc">Менеджер перезвонит вам в течение 10 минут и согласует время визита замерщика.</p>
+        <button class="btn btn--primary btn--lg" id="modalClose">Хорошо</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

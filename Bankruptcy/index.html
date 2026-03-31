@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>СвободаДолг — Банкротство физических лиц. Списание долгов по закону</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header" id="header">
+    <div class="container header__inner">
+        <a href="#" class="logo">
+            <div class="logo__mark">
+                <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="18" cy="18" r="16" stroke="currentColor" stroke-width="2"/>
+                    <path d="M12 18h12M18 12v12" stroke="currentColor" stroke-width="2" stroke-linecap="round" opacity="0.3"/>
+                    <path d="M13 13l10 10" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+                </svg>
+            </div>
+            <span class="logo__text">Свобода<span class="logo__accent">Долг</span></span>
+        </a>
+        <nav class="nav" id="nav">
+            <a href="#steps" class="nav__link">Как это работает</a>
+            <a href="#benefits" class="nav__link">Преимущества</a>
+            <a href="#faq" class="nav__link">Вопросы</a>
+            <a href="#contacts" class="nav__link">Консультация</a>
+        </nav>
+        <a href="tel:+78001234567" class="header__phone">
+            <svg viewBox="0 0 20 20" fill="none"><path d="M17.924 14.382a1.5 1.5 0 01-1.536 1.486c-1.28-.068-3.7-.52-6.064-2.2-1.904-1.354-3.14-3.104-3.82-4.412-.678-1.31-1.074-2.91-1.126-4.186A1.5 1.5 0 016.864 3.5H8.7a1 1 0 01.998.874c.063.513.18 1.015.347 1.498a1 1 0 01-.262 1.07l-.534.48a10.097 10.097 0 003.33 4.244l.544-.432a1 1 0 011.08-.166c.5.228 1.026.396 1.566.501a1 1 0 01.808 1.013l-.052 1.8z" stroke="currentColor" stroke-width="1.5"/></svg>
+            8 (800) 123-45-67
+        </a>
+        <button class="burger" id="burger" aria-label="Меню">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</header>
+
+<!-- BLOCK 1: HERO -->
+<section class="hero" id="hero">
+    <div class="container hero__inner">
+        <div class="hero__content">
+            <div class="hero__badge">
+                <svg viewBox="0 0 20 20" fill="none"><path d="M10 1l2.39 4.843 5.346.777-3.868 3.77.913 5.324L10 13.347l-4.781 2.367.913-5.324-3.868-3.77 5.346-.777L10 1z" fill="currentColor"/></svg>
+                Федеральный закон №127-ФЗ
+            </div>
+            <h1 class="hero__title">Спишем ваши долги <span class="hero__em">от 300 000 ₽</span> законно и навсегда</h1>
+            <p class="hero__subtitle">Кредиты, микрозаймы, ЖКХ, налоги — проведём через процедуру банкротства под ключ. Коллекторы перестанут звонить уже после подачи заявления в суд.</p>
+            <div class="hero__actions">
+                <a href="#contacts" class="btn btn--primary btn--lg">
+                    Бесплатная консультация
+                    <svg class="btn__icon" viewBox="0 0 20 20" fill="none"><path d="M4 10h12m0 0l-4-4m4 4l-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
+                <a href="#steps" class="btn btn--outline btn--lg">Как это работает</a>
+            </div>
+            <div class="hero__counters">
+                <div class="hero__counter">
+                    <span class="hero__counter-num" data-target="4200">0</span><span class="hero__counter-plus">+</span>
+                    <span class="hero__counter-label">дел выиграно</span>
+                </div>
+                <div class="hero__counter-divider"></div>
+                <div class="hero__counter">
+                    <span class="hero__counter-num" data-target="2">0</span>
+                    <span class="hero__counter-label">млрд ₽ списано</span>
+                </div>
+                <div class="hero__counter-divider"></div>
+                <div class="hero__counter">
+                    <span class="hero__counter-num" data-target="98">0</span><span class="hero__counter-plus">%</span>
+                    <span class="hero__counter-label">успешных дел</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero__visual">
+            <div class="hero__shield">
+                <svg viewBox="0 0 200 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M100 10L20 50V110C20 165 55 210 100 230C145 210 180 165 180 110V50L100 10Z" fill="url(#shieldGrad)" stroke="rgba(255,255,255,0.1)" stroke-width="2"/>
+                    <path d="M100 10L20 50V110C20 165 55 210 100 230" fill="rgba(255,255,255,0.05)"/>
+                    <path d="M72 120L92 140L132 100" stroke="white" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" opacity="0.9"/>
+                    <defs>
+                        <linearGradient id="shieldGrad" x1="20" y1="10" x2="180" y2="230" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#2563EB"/>
+                            <stop offset="1" stop-color="#7C3AED"/>
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <div class="hero__shield-ring"></div>
+                <div class="hero__shield-particle hero__shield-particle--1"></div>
+                <div class="hero__shield-particle hero__shield-particle--2"></div>
+                <div class="hero__shield-particle hero__shield-particle--3"></div>
+            </div>
+        </div>
+    </div>
+    <div class="hero__wave">
+        <svg viewBox="0 0 1440 100" preserveAspectRatio="none"><path d="M0 50L80 42C160 34 320 18 480 14C640 10 800 18 960 30C1120 42 1280 58 1360 66L1440 74V100H0Z" fill="#ffffff"/></svg>
+    </div>
+</section>
+
+<!-- BLOCK 2: STEPS -->
+<section class="steps" id="steps">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag">Процедура</span>
+            <h2 class="section-title">Как работает банкротство</h2>
+            <p class="section-desc">4 простых этапа от первого звонка до полного списания всех долгов</p>
+        </div>
+        <div class="steps__timeline">
+            <div class="step" data-aos>
+                <div class="step__marker">
+                    <span class="step__num">01</span>
+                    <div class="step__line"></div>
+                </div>
+                <div class="step__card">
+                    <div class="step__icon">
+                        <svg viewBox="0 0 32 32" fill="none"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" stroke="currentColor" stroke-width="2"/></svg>
+                    </div>
+                    <h3 class="step__title">Бесплатная консультация</h3>
+                    <p class="step__desc">Юрист изучит вашу ситуацию, оценит сумму долгов и скажет, подходит ли вам банкротство. Без обязательств.</p>
+                    <span class="step__time">15–20 минут</span>
+                </div>
+            </div>
+            <div class="step" data-aos>
+                <div class="step__marker">
+                    <span class="step__num">02</span>
+                    <div class="step__line"></div>
+                </div>
+                <div class="step__card">
+                    <div class="step__icon">
+                        <svg viewBox="0 0 32 32" fill="none"><path d="M18 2H8a2 2 0 00-2 2v24a2 2 0 002 2h16a2 2 0 002-2V10l-8-8z" stroke="currentColor" stroke-width="2"/><path d="M18 2v8h8M14 17h8M14 21h8M10 17h.01M10 21h.01" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                    </div>
+                    <h3 class="step__title">Сбор документов</h3>
+                    <p class="step__desc">Мы сами запросим справки, выписки и подготовим заявление в суд. Вам нужно только подписать.</p>
+                    <span class="step__time">2–3 недели</span>
+                </div>
+            </div>
+            <div class="step" data-aos>
+                <div class="step__marker">
+                    <span class="step__num">03</span>
+                    <div class="step__line"></div>
+                </div>
+                <div class="step__card">
+                    <div class="step__icon">
+                        <svg viewBox="0 0 32 32" fill="none"><path d="M4 22l4-4h6l4 4h6l4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><rect x="8" y="6" width="16" height="12" rx="2" stroke="currentColor" stroke-width="2"/><path d="M12 12h8M12 16h5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                    </div>
+                    <h3 class="step__title">Судебная процедура</h3>
+                    <p class="step__desc">Арбитражный управляющий ведёт дело. Коллекторы и банки обязаны прекратить звонки и списания с первого дня.</p>
+                    <span class="step__time">6–10 месяцев</span>
+                </div>
+            </div>
+            <div class="step" data-aos>
+                <div class="step__marker">
+                    <span class="step__num">04</span>
+                </div>
+                <div class="step__card step__card--final">
+                    <div class="step__icon step__icon--success">
+                        <svg viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="12" stroke="currentColor" stroke-width="2"/><path d="M11 16l3.5 3.5L22 12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </div>
+                    <h3 class="step__title">Долги списаны</h3>
+                    <p class="step__desc">Суд выносит решение о списании долгов. Вы свободны от всех обязательств — начинаете жизнь с чистого листа.</p>
+                    <span class="step__time step__time--accent">Навсегда</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- BLOCK 3: BENEFITS -->
+<section class="benefits" id="benefits">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag">Почему мы</span>
+            <h2 class="section-title">Работаем на результат — списание долгов</h2>
+        </div>
+        <div class="benefits__grid">
+            <div class="benefit benefit--wide" data-aos>
+                <div class="benefit__top">
+                    <div class="benefit__icon-wrap">
+                        <svg viewBox="0 0 32 32" fill="none"><path d="M16 4l3 6.1 6.7 1-4.85 4.7L22 22.5 16 19.2 10 22.5l1.15-6.7L6.3 11.1l6.7-1L16 4z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+                    </div>
+                    <div class="benefit__metric">
+                        <span class="benefit__metric-num">98%</span>
+                        <span class="benefit__metric-text">дел заканчиваются списанием</span>
+                    </div>
+                </div>
+                <h3 class="benefit__title">Гарантия результата</h3>
+                <p class="benefit__desc">Если ваше дело не подходит под банкротство — скажем сразу и не возьмём ни рубля. Берёмся только за те дела, в которых уверены.</p>
+            </div>
+            <div class="benefit" data-aos>
+                <div class="benefit__icon-wrap">
+                    <svg viewBox="0 0 32 32" fill="none"><rect x="4" y="8" width="24" height="16" rx="3" stroke="currentColor" stroke-width="2"/><path d="M4 14h24" stroke="currentColor" stroke-width="2"/><path d="M8 20h4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                </div>
+                <h3 class="benefit__title">Рассрочка оплаты</h3>
+                <p class="benefit__desc">Оплата услуг в рассрочку на 12 месяцев. Фиксированная стоимость — без скрытых доплат в процессе.</p>
+            </div>
+            <div class="benefit" data-aos>
+                <div class="benefit__icon-wrap">
+                    <svg viewBox="0 0 32 32" fill="none"><path d="M28 14H4M28 14L22 8M28 14L22 20M4 22H28M4 22L10 16M4 22L10 28" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </div>
+                <h3 class="benefit__title">Без поездок в суд</h3>
+                <p class="benefit__desc">Юрист представляет ваши интересы на всех заседаниях. Вам не нужно отпрашиваться с работы.</p>
+            </div>
+            <div class="benefit" data-aos>
+                <div class="benefit__icon-wrap">
+                    <svg viewBox="0 0 32 32" fill="none"><path d="M16 28C22.627 28 28 22.627 28 16S22.627 4 16 4 4 9.373 4 16s5.373 12 12 12z" stroke="currentColor" stroke-width="2"/><path d="M16 10v6l4 2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                </div>
+                <h3 class="benefit__title">Звонки прекратятся</h3>
+                <p class="benefit__desc">С момента подачи заявления в суд коллекторы и банки обязаны прекратить любые контакты с вами.</p>
+            </div>
+            <div class="benefit" data-aos>
+                <div class="benefit__icon-wrap">
+                    <svg viewBox="0 0 32 32" fill="none"><path d="M16 4v8l6-3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="16" cy="16" r="12" stroke="currentColor" stroke-width="2"/></svg>
+                </div>
+                <h3 class="benefit__title">Подаём заявление за 14 дней</h3>
+                <p class="benefit__desc">Быстро собираем документы и подаём в суд. Чем раньше начнём — тем быстрее вы будете свободны.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- BLOCK 4: FAQ -->
+<section class="faq" id="faq">
+    <div class="container">
+        <div class="faq__inner">
+            <div class="faq__header">
+                <span class="section-tag">Вопросы</span>
+                <h2 class="section-title">Частые вопросы о банкротстве</h2>
+                <p class="faq__note">Не нашли ответ? Задайте вопрос юристу — это бесплатно.</p>
+                <a href="#contacts" class="btn btn--primary btn--lg">Задать вопрос</a>
+            </div>
+            <div class="faq__list">
+                <div class="faq-item" data-aos>
+                    <button class="faq-item__header" aria-expanded="false">
+                        <span>Заберут ли квартиру при банкротстве?</span>
+                        <svg class="faq-item__icon" viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                    </button>
+                    <div class="faq-item__body">
+                        <p>Нет, если это ваше единственное жильё. По закону единственная квартира или дом защищены от взыскания. Исключение — ипотечное жильё.</p>
+                    </div>
+                </div>
+                <div class="faq-item" data-aos>
+                    <button class="faq-item__header" aria-expanded="false">
+                        <span>Какие долги можно списать?</span>
+                        <svg class="faq-item__icon" viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                    </button>
+                    <div class="faq-item__body">
+                        <p>Кредиты, микрозаймы, долги по ЖКХ, налоговые задолженности, штрафы ГИБДД, долги по распискам. Нельзя списать алименты и компенсацию вреда здоровью.</p>
+                    </div>
+                </div>
+                <div class="faq-item" data-aos>
+                    <button class="faq-item__header" aria-expanded="false">
+                        <span>Сколько стоит процедура банкротства?</span>
+                        <svg class="faq-item__icon" viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                    </button>
+                    <div class="faq-item__body">
+                        <p>Стоимость услуг — от 80 000 ₽ с рассрочкой до 12 месяцев. В стоимость входит: юридическое сопровождение, арбитражный управляющий, госпошлина и все судебные расходы.</p>
+                    </div>
+                </div>
+                <div class="faq-item" data-aos>
+                    <button class="faq-item__header" aria-expanded="false">
+                        <span>Можно ли потом брать кредиты?</span>
+                        <svg class="faq-item__icon" viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                    </button>
+                    <div class="faq-item__body">
+                        <p>Да. По закону вы обязаны уведомлять банк о банкротстве в течение 5 лет. Но кредиты брать можно — и многие банки одобряют заявки уже через 1–2 года.</p>
+                    </div>
+                </div>
+                <div class="faq-item" data-aos>
+                    <button class="faq-item__header" aria-expanded="false">
+                        <span>Как банкротство повлияет на работу?</span>
+                        <svg class="faq-item__icon" viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                    </button>
+                    <div class="faq-item__body">
+                        <p>Никак. Работодатель не узнает о банкротстве, если вы сами не скажете. Единственное ограничение — 3 года нельзя занимать руководящие должности в банках и страховых компаниях.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- BLOCK 5: CONTACTS -->
+<section class="contacts" id="contacts">
+    <div class="container">
+        <div class="contacts__card">
+            <div class="contacts__info">
+                <span class="section-tag section-tag--light">Первый шаг</span>
+                <h2 class="contacts__title">Узнайте, можно ли списать ваши долги</h2>
+                <p class="contacts__desc">Бесплатная консультация юриста — 15 минут, которые изменят вашу финансовую ситуацию. Расскажем, подходит ли вам банкротство, и рассчитаем стоимость.</p>
+                <div class="contacts__perks">
+                    <div class="contacts__perk">
+                        <svg viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        <span>Анализ долговой ситуации</span>
+                    </div>
+                    <div class="contacts__perk">
+                        <svg viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        <span>Оценка шансов на списание</span>
+                    </div>
+                    <div class="contacts__perk">
+                        <svg viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        <span>Расчёт стоимости под ключ</span>
+                    </div>
+                    <div class="contacts__perk">
+                        <svg viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        <span>Без обязательств</span>
+                    </div>
+                </div>
+                <div class="contacts__contact">
+                    <div class="contacts__contact-item">
+                        <svg viewBox="0 0 24 24" fill="none"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" stroke="currentColor" stroke-width="2"/></svg>
+                        <div>
+                            <span class="contacts__contact-label">Горячая линия</span>
+                            <a href="tel:+78001234567" class="contacts__contact-value">8 (800) 123-45-67</a>
+                        </div>
+                    </div>
+                    <div class="contacts__contact-item">
+                        <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/><path d="M12 6v6l4 2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                        <div>
+                            <span class="contacts__contact-label">Время работы</span>
+                            <span class="contacts__contact-value">Ежедневно 9:00 — 21:00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contacts__form-wrap">
+                <form class="form" id="leadForm">
+                    <h3 class="form__title">Получить консультацию</h3>
+                    <div class="form__group">
+                        <label class="form__label" for="name">Ваше имя</label>
+                        <input class="form__input" type="text" id="name" name="name" placeholder="Как к вам обращаться?" required>
+                    </div>
+                    <div class="form__group">
+                        <label class="form__label" for="phone">Телефон</label>
+                        <input class="form__input" type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__" required>
+                    </div>
+                    <div class="form__group">
+                        <label class="form__label" for="debt">Сумма долга</label>
+                        <select class="form__input form__select" id="debt" name="debt">
+                            <option value="" disabled selected>Выберите диапазон</option>
+                            <option value="300-500">300 000 — 500 000 ₽</option>
+                            <option value="500-1m">500 000 — 1 000 000 ₽</option>
+                            <option value="1m-3m">1 000 000 — 3 000 000 ₽</option>
+                            <option value="3m+">Более 3 000 000 ₽</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn--primary btn--lg btn--full">
+                        Получить консультацию бесплатно
+                    </button>
+                    <p class="form__note">Все данные защищены. Мы не передаём информацию третьим лицам.</p>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="container footer__inner">
+        <a href="#" class="logo">
+            <div class="logo__mark"><svg viewBox="0 0 36 36" fill="none"><circle cx="18" cy="18" r="16" stroke="currentColor" stroke-width="2"/><path d="M13 13l10 10" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg></div>
+            <span class="logo__text">Свобода<span class="logo__accent">Долг</span></span>
+        </a>
+        <p class="footer__copy">&copy; 2026 СвободаДолг. Все права защищены. Информация не является публичной офертой.</p>
+    </div>
+</footer>
+
+<!-- MODAL -->
+<div class="modal" id="modal">
+    <div class="modal__overlay" id="modalOverlay"></div>
+    <div class="modal__content">
+        <div class="modal__icon">
+            <svg viewBox="0 0 64 64" fill="none"><circle cx="32" cy="32" r="30" stroke="currentColor" stroke-width="3"/><path d="M20 32l8 8 16-16" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <h3 class="modal__title">Заявка принята!</h3>
+        <p class="modal__desc">Юрист перезвонит вам в течение 15 минут и проведёт бесплатную консультацию.</p>
+        <button class="btn btn--primary btn--lg" id="modalClose">Хорошо</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

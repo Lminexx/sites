@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PixelCraft — Разработка сайтов под ключ. Лендинги, корпоративные сайты, интернет-магазины</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header" id="header">
+    <div class="container header__inner">
+        <a href="#" class="logo">
+            <svg class="logo__icon" viewBox="0 0 32 32" fill="none">
+                <rect x="2" y="2" width="12" height="12" rx="3" fill="currentColor" opacity="0.8"/>
+                <rect x="18" y="2" width="12" height="12" rx="3" fill="currentColor" opacity="0.4"/>
+                <rect x="2" y="18" width="12" height="12" rx="3" fill="currentColor" opacity="0.4"/>
+                <rect x="18" y="18" width="12" height="12" rx="3" fill="currentColor" opacity="0.15"/>
+            </svg>
+            <span class="logo__text">Pixel<span class="logo__accent">Craft</span></span>
+        </a>
+        <nav class="nav" id="nav">
+            <a href="#services" class="nav__link">Услуги</a>
+            <a href="#portfolio" class="nav__link">Портфолио</a>
+            <a href="#process" class="nav__link">Как работаем</a>
+            <a href="#brief" class="nav__link">Заявка</a>
+        </nav>
+        <a href="#brief" class="btn btn--sm btn--header">Обсудить проект</a>
+        <button class="burger" id="burger" aria-label="Меню"><span></span><span></span><span></span></button>
+    </div>
+</header>
+
+<!-- BLOCK 1: HERO -->
+<section class="hero" id="hero">
+    <div class="hero__grid-bg"></div>
+    <div class="hero__glow hero__glow--1"></div>
+    <div class="hero__glow hero__glow--2"></div>
+    <div class="container hero__inner">
+        <div class="hero__content">
+            <div class="hero__badge">
+                <span class="hero__badge-dot"></span>
+                Берём проекты на июнь 2026
+            </div>
+            <h1 class="hero__title">Сайт, который <span class="hero__em">продаёт</span>, а не просто существует</h1>
+            <p class="hero__subtitle">Разрабатываем лендинги, корпоративные сайты и интернет-магазины под ключ. Дизайн, вёрстка, запуск — за 14 дней. С 2018 года, 200+ проектов.</p>
+            <div class="hero__actions">
+                <a href="#brief" class="btn btn--primary btn--lg">
+                    Заполнить бриф
+                    <svg class="btn__icon" viewBox="0 0 20 20" fill="none"><path d="M4 10h12m0 0l-4-4m4 4l-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
+                <a href="#portfolio" class="btn btn--ghost btn--lg">Смотреть работы</a>
+            </div>
+        </div>
+        <div class="hero__terminal">
+            <div class="hero__terminal-bar">
+                <span class="hero__terminal-dot" style="background:#FF5F57"></span>
+                <span class="hero__terminal-dot" style="background:#FEBD2E"></span>
+                <span class="hero__terminal-dot" style="background:#27C93F"></span>
+                <span class="hero__terminal-title">project.config</span>
+            </div>
+            <div class="hero__terminal-body">
+                <code id="terminalCode"></code>
+                <span class="hero__terminal-cursor"></span>
+            </div>
+        </div>
+    </div>
+    <div class="hero__wave">
+        <svg viewBox="0 0 1440 80" preserveAspectRatio="none"><path d="M0 40L80 36C160 32 320 24 480 22C640 20 800 24 960 30C1120 36 1280 44 1360 48L1440 52V80H0Z" fill="#ffffff"/></svg>
+    </div>
+</section>
+
+<!-- BLOCK 2: SERVICES -->
+<section class="services" id="services">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag">Услуги</span>
+            <h2 class="section-title">Что мы создаём</h2>
+            <p class="section-desc">Три формата сайтов — под любую задачу бизнеса</p>
+        </div>
+        <div class="services__grid">
+            <div class="service-card" data-aos>
+                <div class="service-card__head">
+                    <div class="service-card__mockup service-card__mockup--landing">
+                        <div class="mockup-bar"><span></span><span></span><span></span></div>
+                        <div class="mockup-hero-block"></div>
+                        <div class="mockup-line" style="width:60%"></div>
+                        <div class="mockup-line" style="width:80%"></div>
+                        <div class="mockup-cols">
+                            <div class="mockup-col"></div>
+                            <div class="mockup-col"></div>
+                            <div class="mockup-col"></div>
+                        </div>
+                        <div class="mockup-btn"></div>
+                    </div>
+                </div>
+                <div class="service-card__body">
+                    <span class="service-card__price">от 40 000 ₽</span>
+                    <h3 class="service-card__title">Лендинг</h3>
+                    <p class="service-card__desc">Одностраничный продающий сайт для продукта, услуги или мероприятия. Максимум конверсии при минимуме страниц.</p>
+                    <div class="service-card__meta">
+                        <span>7–10 дней</span>
+                        <span>1–5 экранов</span>
+                        <span>Адаптив</span>
+                    </div>
+                </div>
+            </div>
+            <div class="service-card service-card--featured" data-aos>
+                <div class="service-card__badge">Популярный</div>
+                <div class="service-card__head">
+                    <div class="service-card__mockup service-card__mockup--corporate">
+                        <div class="mockup-bar"><span></span><span></span><span></span></div>
+                        <div class="mockup-nav"></div>
+                        <div class="mockup-hero-block"></div>
+                        <div class="mockup-grid">
+                            <div></div><div></div><div></div><div></div>
+                        </div>
+                        <div class="mockup-line" style="width:50%"></div>
+                    </div>
+                </div>
+                <div class="service-card__body">
+                    <span class="service-card__price">от 90 000 ₽</span>
+                    <h3 class="service-card__title">Корпоративный сайт</h3>
+                    <p class="service-card__desc">Многостраничный сайт для компании: о нас, услуги, кейсы, блог, контакты. Солидное представительство в интернете.</p>
+                    <div class="service-card__meta">
+                        <span>14–21 день</span>
+                        <span>5–15 страниц</span>
+                        <span>CMS</span>
+                    </div>
+                </div>
+            </div>
+            <div class="service-card" data-aos>
+                <div class="service-card__head">
+                    <div class="service-card__mockup service-card__mockup--shop">
+                        <div class="mockup-bar"><span></span><span></span><span></span></div>
+                        <div class="mockup-nav"></div>
+                        <div class="mockup-products">
+                            <div class="mockup-product"><div class="mockup-product-img"></div><div class="mockup-product-line"></div><div class="mockup-product-price"></div></div>
+                            <div class="mockup-product"><div class="mockup-product-img"></div><div class="mockup-product-line"></div><div class="mockup-product-price"></div></div>
+                            <div class="mockup-product"><div class="mockup-product-img"></div><div class="mockup-product-line"></div><div class="mockup-product-price"></div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-card__body">
+                    <span class="service-card__price">от 150 000 ₽</span>
+                    <h3 class="service-card__title">Интернет-магазин</h3>
+                    <p class="service-card__desc">Полноценный e-commerce с каталогом, корзиной, оплатой и личным кабинетом. Готов к масштабированию с первого дня.</p>
+                    <div class="service-card__meta">
+                        <span>21–30 дней</span>
+                        <span>Каталог + CRM</span>
+                        <span>Оплата</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- BLOCK 3: PORTFOLIO -->
+<section class="portfolio" id="portfolio">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag">Портфолио</span>
+            <h2 class="section-title">Последние проекты</h2>
+            <p class="section-desc">Каждый сайт — это результат, а не просто дизайн</p>
+        </div>
+        <div class="portfolio__grid">
+            <div class="portfolio-card" data-aos>
+                <div class="portfolio-card__visual portfolio-card__visual--1">
+                    <div class="portfolio-card__browser">
+                        <div class="mockup-bar"><span></span><span></span><span></span></div>
+                        <div class="portfolio-card__screen">
+                            <div class="screen-block screen-block--hero"></div>
+                            <div class="screen-block screen-block--text" style="width:70%"></div>
+                            <div class="screen-block screen-block--text" style="width:50%"></div>
+                            <div class="screen-block screen-block--cards">
+                                <div></div><div></div><div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-card__body">
+                    <span class="portfolio-card__type">Лендинг</span>
+                    <h3 class="portfolio-card__title">Стоматологическая клиника</h3>
+                    <div class="portfolio-card__result">
+                        <div><strong>+240%</strong><span>конверсия</span></div>
+                        <div><strong>12 дней</strong><span>разработка</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-card" data-aos>
+                <div class="portfolio-card__visual portfolio-card__visual--2">
+                    <div class="portfolio-card__browser">
+                        <div class="mockup-bar"><span></span><span></span><span></span></div>
+                        <div class="portfolio-card__screen">
+                            <div class="screen-block screen-block--nav"></div>
+                            <div class="screen-block screen-block--hero"></div>
+                            <div class="screen-block screen-block--grid">
+                                <div></div><div></div><div></div><div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-card__body">
+                    <span class="portfolio-card__type">Корпоративный</span>
+                    <h3 class="portfolio-card__title">Юридическая компания</h3>
+                    <div class="portfolio-card__result">
+                        <div><strong>+180%</strong><span>заявки</span></div>
+                        <div><strong>18 дней</strong><span>разработка</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-card" data-aos>
+                <div class="portfolio-card__visual portfolio-card__visual--3">
+                    <div class="portfolio-card__browser">
+                        <div class="mockup-bar"><span></span><span></span><span></span></div>
+                        <div class="portfolio-card__screen">
+                            <div class="screen-block screen-block--nav"></div>
+                            <div class="screen-block screen-block--products-grid">
+                                <div></div><div></div><div></div>
+                                <div></div><div></div><div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-card__body">
+                    <span class="portfolio-card__type">Интернет-магазин</span>
+                    <h3 class="portfolio-card__title">Магазин мебели</h3>
+                    <div class="portfolio-card__result">
+                        <div><strong>+320%</strong><span>продажи</span></div>
+                        <div><strong>24 дня</strong><span>разработка</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- BLOCK 4: PROCESS -->
+<section class="process" id="process">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag">Процесс</span>
+            <h2 class="section-title">5 шагов до готового сайта</h2>
+        </div>
+        <div class="process__steps">
+            <div class="step" data-aos>
+                <div class="step__num">01</div>
+                <div class="step__content">
+                    <h3 class="step__title">Бриф и аналитика</h3>
+                    <p class="step__desc">Изучаем бизнес, конкурентов и целевую аудиторию. Формулируем задачи сайта и структуру.</p>
+                    <span class="step__time">1–2 дня</span>
+                </div>
+            </div>
+            <div class="step" data-aos>
+                <div class="step__num">02</div>
+                <div class="step__content">
+                    <h3 class="step__title">Прототип</h3>
+                    <p class="step__desc">Рисуем wireframe — скелет будущего сайта. Утверждаем логику и расположение блоков.</p>
+                    <span class="step__time">2–3 дня</span>
+                </div>
+            </div>
+            <div class="step" data-aos>
+                <div class="step__num">03</div>
+                <div class="step__content">
+                    <h3 class="step__title">Дизайн</h3>
+                    <p class="step__desc">Создаём UI-дизайн в Figma: цвета, типографика, hover-эффекты. 2 раунда правок включены.</p>
+                    <span class="step__time">3–5 дней</span>
+                </div>
+            </div>
+            <div class="step" data-aos>
+                <div class="step__num">04</div>
+                <div class="step__content">
+                    <h3 class="step__title">Вёрстка и разработка</h3>
+                    <p class="step__desc">Pixel-perfect вёрстка, адаптив, анимации, интеграция форм и CMS. Чистый код без конструкторов.</p>
+                    <span class="step__time">5–7 дней</span>
+                </div>
+            </div>
+            <div class="step" data-aos>
+                <div class="step__num">05</div>
+                <div class="step__content">
+                    <h3 class="step__title">Запуск и поддержка</h3>
+                    <p class="step__desc">Деплой на хостинг, настройка аналитики, SSL. 30 дней бесплатной поддержки после запуска.</p>
+                    <span class="step__time">1–2 дня</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- BLOCK 5: BRIEF -->
+<section class="brief" id="brief">
+    <div class="container">
+        <div class="brief__card">
+            <div class="brief__left">
+                <span class="section-tag section-tag--dark">Старт проекта</span>
+                <h2 class="brief__title">Расскажите о вашем проекте</h2>
+                <p class="brief__desc">Заполните бриф — мы изучим задачу, подготовим коммерческое предложение и презентуем концепцию. Это бесплатно и ни к чему не обязывает.</p>
+                <div class="brief__includes">
+                    <div class="brief__include">
+                        <svg viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        <span>Анализ ниши и конкурентов</span>
+                    </div>
+                    <div class="brief__include">
+                        <svg viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        <span>Коммерческое предложение</span>
+                    </div>
+                    <div class="brief__include">
+                        <svg viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        <span>Примерные сроки и бюджет</span>
+                    </div>
+                    <div class="brief__include">
+                        <svg viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        <span>Концепция дизайна</span>
+                    </div>
+                </div>
+                <div class="brief__contact">
+                    <div class="brief__contact-item">
+                        <svg viewBox="0 0 20 20" fill="none"><path d="M2 4h16v12H2z" stroke="currentColor" stroke-width="1.5" rx="2"/><path d="M2 4l8 6 8-6" stroke="currentColor" stroke-width="1.5"/></svg>
+                        <span>hello@pixelcraft.ru</span>
+                    </div>
+                    <div class="brief__contact-item">
+                        <svg viewBox="0 0 20 20" fill="none"><path d="M3 5a2 2 0 012-2h10a2 2 0 012 2v10a2 2 0 01-2 2H5a2 2 0 01-2-2V5z" stroke="currentColor" stroke-width="1.5"/><path d="M7 10l2.5 2L13 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        <span>Telegram: @pixelcraft</span>
+                    </div>
+                </div>
+            </div>
+            <div class="brief__right">
+                <form class="form" id="leadForm">
+                    <div class="form__group">
+                        <label class="form__label" for="name">Ваше имя</label>
+                        <input class="form__input" type="text" id="name" name="name" placeholder="Как вас зовут?" required>
+                    </div>
+                    <div class="form__row">
+                        <div class="form__group">
+                            <label class="form__label" for="phone">Телефон</label>
+                            <input class="form__input" type="tel" id="phone" name="phone" placeholder="+7..." required>
+                        </div>
+                        <div class="form__group">
+                            <label class="form__label" for="telegram">Telegram</label>
+                            <input class="form__input" type="text" id="telegram" name="telegram" placeholder="@username">
+                        </div>
+                    </div>
+                    <div class="form__group">
+                        <label class="form__label" for="type">Тип сайта</label>
+                        <select class="form__input form__select" id="type" name="type">
+                            <option value="" disabled selected>Что нужно?</option>
+                            <option value="landing">Лендинг</option>
+                            <option value="corporate">Корпоративный сайт</option>
+                            <option value="shop">Интернет-магазин</option>
+                            <option value="other">Другое</option>
+                        </select>
+                    </div>
+                    <div class="form__group">
+                        <label class="form__label" for="details">О проекте <span class="form__optional">(необязательно)</span></label>
+                        <textarea class="form__input form__textarea" id="details" name="details" placeholder="Кратко о бизнесе и задачах сайта" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn--primary btn--lg btn--full">Отправить бриф</button>
+                    <p class="form__note">Ответим в течение 2 часов в рабочее время</p>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="container footer__inner">
+        <a href="#" class="logo">
+            <svg class="logo__icon" viewBox="0 0 32 32" fill="none"><rect x="2" y="2" width="12" height="12" rx="3" fill="currentColor" opacity="0.8"/><rect x="18" y="2" width="12" height="12" rx="3" fill="currentColor" opacity="0.4"/><rect x="2" y="18" width="12" height="12" rx="3" fill="currentColor" opacity="0.4"/><rect x="18" y="18" width="12" height="12" rx="3" fill="currentColor" opacity="0.15"/></svg>
+            <span class="logo__text">Pixel<span class="logo__accent">Craft</span></span>
+        </a>
+        <p class="footer__copy">&copy; 2026 PixelCraft. Разработка сайтов под ключ. Москва.</p>
+    </div>
+</footer>
+
+<!-- MODAL -->
+<div class="modal" id="modal">
+    <div class="modal__overlay" id="modalOverlay"></div>
+    <div class="modal__content">
+        <div class="modal__icon">
+            <svg viewBox="0 0 64 64" fill="none"><circle cx="32" cy="32" r="30" stroke="currentColor" stroke-width="2.5"/><path d="M20 32l8 8 16-16" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <h3 class="modal__title">Бриф отправлен!</h3>
+        <p class="modal__desc">Изучим задачу и вернёмся с коммерческим предложением в течение 2 часов.</p>
+        <button class="btn btn--primary btn--lg" id="modalClose">Отлично</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

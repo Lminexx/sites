@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillUp — Онлайн-курсы по дизайну, маркетингу и программированию</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header" id="header">
+    <div class="container header__inner">
+        <a href="#" class="logo">
+            <div class="logo__mark">
+                <svg viewBox="0 0 36 36" fill="none">
+                    <rect x="4" y="4" width="28" height="28" rx="8" fill="url(#logoGrad)"/>
+                    <path d="M13 22V14l5 4 5-4v8" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <defs><linearGradient id="logoGrad" x1="4" y1="4" x2="32" y2="32"><stop stop-color="#8B5CF6"/><stop offset="1" stop-color="#EC4899"/></linearGradient></defs>
+                </svg>
+            </div>
+            <span class="logo__text">Skill<span class="logo__accent">Up</span></span>
+        </a>
+        <nav class="nav" id="nav">
+            <a href="#courses" class="nav__link">Направления</a>
+            <a href="#program" class="nav__link">Программа</a>
+            <a href="#pricing" class="nav__link">Стоимость</a>
+            <a href="#webinar" class="nav__link">Вебинар</a>
+        </nav>
+        <a href="#webinar" class="btn btn--sm btn--header">Бесплатный вебинар</a>
+        <button class="burger" id="burger" aria-label="Меню">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</header>
+
+<!-- BLOCK 1: HERO -->
+<section class="hero" id="hero">
+    <div class="hero__decor">
+        <div class="hero__orb hero__orb--1"></div>
+        <div class="hero__orb hero__orb--2"></div>
+        <div class="hero__orb hero__orb--3"></div>
+        <div class="hero__grid"></div>
+    </div>
+    <div class="container hero__inner">
+        <div class="hero__content">
+            <div class="hero__badge">
+                <span class="hero__badge-icon">&#9889;</span>
+                Старт потока — 15 апреля
+            </div>
+            <h1 class="hero__title">Освой <span class="hero__rotate-wrap"><span class="hero__rotate" id="heroRotate">дизайн</span></span> и начни зарабатывать через 4 месяца</h1>
+            <p class="hero__subtitle">Практические онлайн-курсы с наставником, реальными проектами в портфолио и помощью в трудоустройстве. Учитесь в своём темпе из любой точки мира.</p>
+            <div class="hero__actions">
+                <a href="#webinar" class="btn btn--primary btn--lg">
+                    Записаться на бесплатный вебинар
+                    <svg class="btn__icon" viewBox="0 0 20 20" fill="none"><path d="M4 10h12m0 0l-4-4m4 4l-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
+                <a href="#courses" class="btn btn--ghost btn--lg">Выбрать курс</a>
+            </div>
+            <div class="hero__meta">
+                <div class="hero__meta-item">
+                    <span class="hero__meta-value">4 мес.</span>
+                    <span class="hero__meta-label">длительность</span>
+                </div>
+                <div class="hero__meta-sep"></div>
+                <div class="hero__meta-item">
+                    <span class="hero__meta-value">Онлайн</span>
+                    <span class="hero__meta-label">формат</span>
+                </div>
+                <div class="hero__meta-sep"></div>
+                <div class="hero__meta-item">
+                    <span class="hero__meta-value">6 проектов</span>
+                    <span class="hero__meta-label">в портфолио</span>
+                </div>
+                <div class="hero__meta-sep"></div>
+                <div class="hero__meta-item">
+                    <span class="hero__meta-value">87%</span>
+                    <span class="hero__meta-label">находят работу</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="hero__wave">
+        <svg viewBox="0 0 1440 100" preserveAspectRatio="none"><path d="M0 60L80 52C160 44 320 28 480 22C640 16 800 20 960 30C1120 40 1280 56 1360 64L1440 72V100H0Z" fill="#ffffff"/></svg>
+    </div>
+</section>
+
+<!-- BLOCK 2: COURSES / DIRECTIONS -->
+<section class="courses" id="courses">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag">Направления</span>
+            <h2 class="section-title">Выберите свою профессию</h2>
+            <p class="section-desc">Три востребованных направления с гарантией трудоустройства</p>
+        </div>
+        <div class="courses__grid">
+
+            <div class="course-card" data-aos>
+                <div class="course-card__head course-card__head--design">
+                    <div class="course-card__icon-grid">
+                        <div class="course-card__icon-cell"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="4" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.5"/></svg></div>
+                        <div class="course-card__icon-cell"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2l3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1 3-6z" stroke="currentColor" stroke-width="1.5"/></svg></div>
+                        <div class="course-card__icon-cell"><svg viewBox="0 0 24 24" fill="none"><path d="M3 12h18M12 3v18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5"/></svg></div>
+                        <div class="course-card__icon-cell"><svg viewBox="0 0 24 24" fill="none"><path d="M2 12s4-8 10-8 10 8 10 8-4 8-10 8-10-8-10-8z" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.5"/></svg></div>
+                    </div>
+                    <span class="course-card__label">UX/UI Дизайн</span>
+                </div>
+                <div class="course-card__body">
+                    <h3 class="course-card__title">Дизайнер интерфейсов</h3>
+                    <p class="course-card__desc">Научитесь проектировать удобные интерфейсы для сайтов и приложений. Figma, прототипирование, дизайн-системы и работа с клиентами.</p>
+                    <div class="course-card__tags">
+                        <span>Figma</span>
+                        <span>UI Kit</span>
+                        <span>Прототипы</span>
+                        <span>UX Research</span>
+                    </div>
+                    <div class="course-card__footer">
+                        <div class="course-card__salary">
+                            <span class="course-card__salary-label">Зарплата</span>
+                            <span class="course-card__salary-value">от 80 000 ₽</span>
+                        </div>
+                        <a href="#webinar" class="btn btn--primary btn--sm">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="course-card course-card--featured" data-aos>
+                <div class="course-card__badge">Популярный</div>
+                <div class="course-card__head course-card__head--dev">
+                    <div class="course-card__code">
+                        <span class="code-line"><span class="code-kw">const</span> <span class="code-var">career</span> = {</span>
+                        <span class="code-line">&nbsp;&nbsp;salary: <span class="code-str">"150k+"</span>,</span>
+                        <span class="code-line">&nbsp;&nbsp;remote: <span class="code-bool">true</span></span>
+                        <span class="code-line">};</span>
+                    </div>
+                    <span class="course-card__label">Код</span>
+                </div>
+                <div class="course-card__body">
+                    <h3 class="course-card__title">Фронтенд-разработчик</h3>
+                    <p class="course-card__desc">Освоите HTML, CSS, JavaScript и React с нуля. Создадите 6 реальных проектов для портфолио и будете готовы к Junior-позиции.</p>
+                    <div class="course-card__tags">
+                        <span>JavaScript</span>
+                        <span>React</span>
+                        <span>HTML/CSS</span>
+                        <span>Git</span>
+                    </div>
+                    <div class="course-card__footer">
+                        <div class="course-card__salary">
+                            <span class="course-card__salary-label">Зарплата</span>
+                            <span class="course-card__salary-value">от 100 000 ₽</span>
+                        </div>
+                        <a href="#webinar" class="btn btn--primary btn--sm">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="course-card" data-aos>
+                <div class="course-card__head course-card__head--marketing">
+                    <div class="course-card__chart">
+                        <div class="chart-bar" style="--h: 40%"></div>
+                        <div class="chart-bar" style="--h: 65%"></div>
+                        <div class="chart-bar" style="--h: 45%"></div>
+                        <div class="chart-bar" style="--h: 80%"></div>
+                        <div class="chart-bar" style="--h: 60%"></div>
+                        <div class="chart-bar" style="--h: 95%"></div>
+                        <div class="chart-bar" style="--h: 75%"></div>
+                    </div>
+                    <span class="course-card__label">Маркетинг</span>
+                </div>
+                <div class="course-card__body">
+                    <h3 class="course-card__title">Интернет-маркетолог</h3>
+                    <p class="course-card__desc">Научитесь привлекать клиентов через таргет, контекст и контент-маркетинг. Настроите рекламу на реальных бюджетах с первой недели.</p>
+                    <div class="course-card__tags">
+                        <span>Таргет</span>
+                        <span>Контекст</span>
+                        <span>SMM</span>
+                        <span>Аналитика</span>
+                    </div>
+                    <div class="course-card__footer">
+                        <div class="course-card__salary">
+                            <span class="course-card__salary-label">Зарплата</span>
+                            <span class="course-card__salary-value">от 70 000 ₽</span>
+                        </div>
+                        <a href="#webinar" class="btn btn--primary btn--sm">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- BLOCK 3: PROGRAM -->
+<section class="program" id="program">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag">Программа</span>
+            <h2 class="section-title">Чему вы научитесь за 4 месяца</h2>
+            <p class="section-desc">Каждый модуль — практические навыки, которые нужны работодателям прямо сейчас</p>
+        </div>
+        <div class="program__timeline">
+            <div class="program__month" data-aos>
+                <div class="program__month-head">
+                    <span class="program__month-num">01</span>
+                    <div>
+                        <h3 class="program__month-title">Основы и инструменты</h3>
+                        <p class="program__month-sub">Погружение в профессию с первого дня</p>
+                    </div>
+                </div>
+                <div class="program__month-body">
+                    <div class="program__topic">
+                        <svg viewBox="0 0 20 20" fill="none"><path d="M16.667 5L7.5 14.167 3.333 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        <span>Базовые инструменты профессии</span>
+                    </div>
+                    <div class="program__topic">
+                        <svg viewBox="0 0 20 20" fill="none"><path d="M16.667 5L7.5 14.167 3.333 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        <span>Первый мини-проект</span>
+                    </div>
+                    <div class="program__topic">
+                        <svg viewBox="0 0 20 20" fill="none"><path d="M16.667 5L7.5 14.167 3.333 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        <span>Работа с наставником 1-на-1</span>
+                    </div>
+                </div>
+            </div>
+            <div class="program__connector"></div>
+            <div class="program__month" data-aos>
+                <div class="program__month-head">
+                    <span class="program__month-num">02</span>
+                    <div>
+                        <h3 class="program__month-title">Практика и углубление</h3>
+                        <p class="program__month-sub">Работа над реальными задачами</p>
+                    </div>
+                </div>
+                <div class="program__month-body">
+                    <div class="program__topic">
+                        <svg viewBox="0 0 20 20" fill="none"><path d="M16.667 5L7.5 14.167 3.333 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        <span>Продвинутые техники и паттерны</span>
+                    </div>
+                    <div class="program__topic">
+                        <svg viewBox="0 0 20 20" fill="none"><path d="M16.667 5L7.5 14.167 3.333 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        <span>2 проекта в портфолио</span>
+                    </div>
+                    <div class="program__topic">
+                        <svg viewBox="0 0 20 20" fill="none"><path d="M16.667 5L7.5 14.167 3.333 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        <span>Код-ревью и обратная связь</span>
+                    </div>
+                </div>
+            </div>
+            <div class="program__connector"></div>
+            <div class="program__month" data-aos>
+                <div class="program__month-head">
+                    <span class="program__month-num">03</span>
+                    <div>
+                        <h3 class="program__month-title">Командная работа</h3>
+                        <p class="program__month-sub">Проект в команде, как в реальной компании</p>
+                    </div>
+                </div>
+                <div class="program__month-body">
+                    <div class="program__topic">
+                        <svg viewBox="0 0 20 20" fill="none"><path d="M16.667 5L7.5 14.167 3.333 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        <span>Работа в команде из 4 человек</span>
+                    </div>
+                    <div class="program__topic">
+                        <svg viewBox="0 0 20 20" fill="none"><path d="M16.667 5L7.5 14.167 3.333 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        <span>Agile, Scrum, декомпозиция задач</span>
+                    </div>
+                    <div class="program__topic">
+                        <svg viewBox="0 0 20 20" fill="none"><path d="M16.667 5L7.5 14.167 3.333 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        <span>Презентация результата заказчику</span>
+                    </div>
+                </div>
+            </div>
+            <div class="program__connector"></div>
+            <div class="program__month" data-aos>
+                <div class="program__month-head">
+                    <span class="program__month-num">04</span>
+                    <div>
+                        <h3 class="program__month-title">Дипломный проект и карьера</h3>
+                        <p class="program__month-sub">Готовое портфолио и помощь в трудоустройстве</p>
+                    </div>
+                </div>
+                <div class="program__month-body">
+                    <div class="program__topic">
+                        <svg viewBox="0 0 20 20" fill="none"><path d="M16.667 5L7.5 14.167 3.333 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        <span>Дипломный проект от реального заказчика</span>
+                    </div>
+                    <div class="program__topic">
+                        <svg viewBox="0 0 20 20" fill="none"><path d="M16.667 5L7.5 14.167 3.333 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        <span>Подготовка резюме и портфолио</span>
+                    </div>
+                    <div class="program__topic">
+                        <svg viewBox="0 0 20 20" fill="none"><path d="M16.667 5L7.5 14.167 3.333 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        <span>Собеседования с компаниями-партнёрами</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- BLOCK 4: PRICING -->
+<section class="pricing" id="pricing">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag">Тарифы</span>
+            <h2 class="section-title">Инвестиция в будущую карьеру</h2>
+            <p class="section-desc">Выберите формат обучения, который подходит вам</p>
+        </div>
+        <div class="pricing__grid">
+            <div class="price-card" data-aos>
+                <div class="price-card__header">
+                    <h3 class="price-card__name">Самостоятельный</h3>
+                    <p class="price-card__tagline">Учитесь в своём темпе</p>
+                </div>
+                <div class="price-card__price">
+                    <span class="price-card__old">54 900 ₽</span>
+                    <span class="price-card__current">39 900 <span class="price-card__curr">₽</span></span>
+                    <span class="price-card__per">или 6 650 ₽/мес.</span>
+                </div>
+                <ul class="price-card__features">
+                    <li class="price-card__feature">
+                        <svg viewBox="0 0 20 20" fill="none"><path d="M16.667 5L7.5 14.167 3.333 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        Видеоуроки и материалы
+                    </li>
+                    <li class="price-card__feature">
+                        <svg viewBox="0 0 20 20" fill="none"><path d="M16.667 5L7.5 14.167 3.333 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        Практические задания
+                    </li>
+                    <li class="price-card__feature">
+                        <svg viewBox="0 0 20 20" fill="none"><path d="M16.667 5L7.5 14.167 3.333 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        Общий чат студентов
+                    </li>
+                    <li class="price-card__feature">
+                        <svg viewBox="0 0 20 20" fill="none"><path d="M16.667 5L7.5 14.167 3.333 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        Сертификат
+                    </li>
+                    <li class="price-card__feature price-card__feature--disabled">
+                        <svg viewBox="0 0 20 20" fill="none"><path d="M15 5L5 15M5 5l10 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                        Личный наставник
+                    </li>
+                    <li class="price-card__feature price-card__feature--disabled">
+                        <svg viewBox="0 0 20 20" fill="none"><path d="M15 5L5 15M5 5l10 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                        Помощь в трудоустройстве
+                    </li>
+                </ul>
+                <a href="#webinar" class="btn btn--outline btn--lg btn--full">Выбрать</a>
+            </div>
+
+            <div class="price-card price-card--featured" data-aos>
+                <div class="price-card__badge">Лучший выбор</div>
+                <div class="price-card__header">
+                    <h3 class="price-card__name">С наставником</h3>
+                    <p class="price-card__tagline">Максимум поддержки и результат</p>
+                </div>
+                <div class="price-card__price">
+                    <span class="price-card__old">84 900 ₽</span>
+                    <span class="price-card__current">59 900 <span class="price-card__curr">₽</span></span>
+                    <span class="price-card__per">или 9 983 ₽/мес.</span>
+                </div>
+                <ul class="price-card__features">
+                    <li class="price-card__feature">
+                        <svg viewBox="0 0 20 20" fill="none"><path d="M16.667 5L7.5 14.167 3.333 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        Видеоуроки и материалы
+                    </li>
+                    <li class="price-card__feature">
+                        <svg viewBox="0 0 20 20" fill="none"><path d="M16.667 5L7.5 14.167 3.333 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        Практические задания
+                    </li>
+                    <li class="price-card__feature">
+                        <svg viewBox="0 0 20 20" fill="none"><path d="M16.667 5L7.5 14.167 3.333 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        Общий чат студентов
+                    </li>
+                    <li class="price-card__feature">
+                        <svg viewBox="0 0 20 20" fill="none"><path d="M16.667 5L7.5 14.167 3.333 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        Диплом установленного образца
+                    </li>
+                    <li class="price-card__feature price-card__feature--highlight">
+                        <svg viewBox="0 0 20 20" fill="none"><path d="M16.667 5L7.5 14.167 3.333 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        Личный наставник 1-на-1
+                    </li>
+                    <li class="price-card__feature price-card__feature--highlight">
+                        <svg viewBox="0 0 20 20" fill="none"><path d="M16.667 5L7.5 14.167 3.333 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        Помощь в трудоустройстве
+                    </li>
+                </ul>
+                <a href="#webinar" class="btn btn--primary btn--lg btn--full">Выбрать</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- BLOCK 5: WEBINAR CTA -->
+<section class="webinar" id="webinar">
+    <div class="container">
+        <div class="webinar__card">
+            <div class="webinar__left">
+                <span class="section-tag section-tag--glow">Бесплатно</span>
+                <h2 class="webinar__title">Не уверены? Начните с бесплатного вебинара</h2>
+                <p class="webinar__desc">За 1.5 часа покажем изнутри каждую профессию, разберём реальные кейсы выпускников и ответим на все вопросы. Без продаж — только польза.</p>
+                <div class="webinar__points">
+                    <div class="webinar__point">
+                        <svg viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        <span>Разбор профессий: дизайн, код, маркетинг</span>
+                    </div>
+                    <div class="webinar__point">
+                        <svg viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        <span>Сколько зарабатывают и где искать заказы</span>
+                    </div>
+                    <div class="webinar__point">
+                        <svg viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        <span>Живой разбор портфолио выпускников</span>
+                    </div>
+                    <div class="webinar__point">
+                        <svg viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        <span>Ответы на вопросы в прямом эфире</span>
+                    </div>
+                </div>
+            </div>
+            <div class="webinar__right">
+                <form class="form" id="leadForm">
+                    <h3 class="form__title">Записаться на вебинар</h3>
+                    <p class="form__sub">Ближайший эфир — 15 апреля в 19:00 (мск)</p>
+                    <div class="form__group">
+                        <label class="form__label" for="name">Ваше имя</label>
+                        <input class="form__input" type="text" id="name" name="name" placeholder="Как вас зовут?" required>
+                    </div>
+                    <div class="form__group">
+                        <label class="form__label" for="email">Email</label>
+                        <input class="form__input" type="email" id="email" name="email" placeholder="your@email.com" required>
+                    </div>
+                    <div class="form__group">
+                        <label class="form__label" for="phone">Телефон</label>
+                        <input class="form__input" type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__" required>
+                    </div>
+                    <button type="submit" class="btn btn--primary btn--lg btn--full">
+                        Занять место на вебинаре
+                    </button>
+                    <p class="form__note">Отправим ссылку на эфир за 30 минут до начала</p>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="container footer__inner">
+        <a href="#" class="logo">
+            <div class="logo__mark"><svg viewBox="0 0 36 36" fill="none"><rect x="4" y="4" width="28" height="28" rx="8" fill="url(#logoGrad2)"/><path d="M13 22V14l5 4 5-4v8" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><defs><linearGradient id="logoGrad2" x1="4" y1="4" x2="32" y2="32"><stop stop-color="#8B5CF6"/><stop offset="1" stop-color="#EC4899"/></linearGradient></defs></svg></div>
+            <span class="logo__text">Skill<span class="logo__accent">Up</span></span>
+        </a>
+        <p class="footer__copy">&copy; 2026 SkillUp. Все права защищены. Образовательная лицензия №12345.</p>
+    </div>
+</footer>
+
+<!-- MODAL -->
+<div class="modal" id="modal">
+    <div class="modal__overlay" id="modalOverlay"></div>
+    <div class="modal__content">
+        <div class="modal__icon">
+            <svg viewBox="0 0 64 64" fill="none"><circle cx="32" cy="32" r="30" stroke="currentColor" stroke-width="3"/><path d="M20 32l8 8 16-16" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <h3 class="modal__title">Вы записаны!</h3>
+        <p class="modal__desc">Ссылка на вебинар придёт на вашу почту за 30 минут до начала. До встречи!</p>
+        <button class="btn btn--primary btn--lg" id="modalClose">Отлично</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
