@@ -3,192 +3,208 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Портфолио Fullstack Developer</title>
+  <title>Портфолио Fullstack Developer | Landing & Automation</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     :root {
-      --bg: #0b1020;
-      --card: #111831;
-      --text: #e6ecff;
-      --muted: #9fb0d9;
-      --accent: #5b8cff;
-      --accent2: #2dd4bf;
-      --border: #22305f;
+      --bg: #070b1a;
+      --bg-soft: #0d1430;
+      --card: #101a3d;
+      --text: #ecf1ff;
+      --muted: #a4b3dd;
+      --line: #223267;
+      --acc: #5f8fff;
+      --acc2: #1dd3c6;
+      --ok: #2dd4bf;
     }
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
-      background: radial-gradient(1200px 600px at 20% -10%, #1b2a57 0%, var(--bg) 50%);
       color: var(--text);
+      background:
+        radial-gradient(900px 400px at 5% -10%, #243f89 0%, transparent 60%),
+        radial-gradient(900px 400px at 100% 0%, #123b54 0%, transparent 60%),
+        var(--bg);
       min-height: 100vh;
     }
-    .wrap { max-width: 1150px; margin: 0 auto; padding: 28px 18px 42px; }
-    .hero { margin-bottom: 20px; }
-    .title { font-size: clamp(28px, 5vw, 46px); line-height: 1.05; font-weight: 800; letter-spacing: -0.02em; }
-    .subtitle { margin-top: 10px; color: var(--muted); max-width: 760px; line-height: 1.55; }
-    .meta {
-      margin-top: 14px;
-      display: inline-flex;
-      gap: 10px;
-      flex-wrap: wrap;
+    .wrap { max-width: 1200px; margin: 0 auto; padding: 26px 16px 40px; }
+    .topbar {
+      display: flex; align-items: center; justify-content: space-between;
+      gap: 12px; margin-bottom: 18px;
     }
+    .brand { font-weight: 800; font-size: 19px; letter-spacing: -0.02em; }
+    .brand span { color: var(--acc2); }
+    .nav { display: flex; gap: 8px; flex-wrap: wrap; }
+    .nav a {
+      text-decoration: none; color: var(--muted); border: 1px solid var(--line);
+      padding: 8px 10px; border-radius: 10px; font-size: 13px; transition: .2s;
+      background: rgba(16,26,61,.55);
+    }
+    .nav a:hover { border-color: #4d6ccc; color: #fff; }
+    .nav a.primary { background: linear-gradient(135deg, var(--acc), #8bb2ff); color: #fff; border: none; }
+
+    .hero { margin-bottom: 16px; }
+    .title { font-size: clamp(29px, 6vw, 52px); line-height: 1.02; letter-spacing: -0.03em; font-weight: 900; }
+    .subtitle { margin-top: 12px; color: var(--muted); max-width: 840px; line-height: 1.58; }
+    .meta { margin-top: 12px; display: flex; gap: 8px; flex-wrap: wrap; }
     .chip {
-      font-size: 13px;
-      padding: 6px 10px;
-      border: 1px solid var(--border);
-      border-radius: 999px;
-      color: var(--muted);
-      background: rgba(17,24,49,.55);
+      border: 1px solid var(--line); color: var(--muted); border-radius: 999px;
+      padding: 6px 10px; font-size: 12px; background: rgba(16,26,61,.55);
     }
+
+    .section-title { margin-top: 24px; margin-bottom: 10px; font-size: 20px; letter-spacing: -0.01em; }
     .grid {
-      margin-top: 18px;
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0,1fr));
-      gap: 14px;
+      display: grid; gap: 14px;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
     }
     .card {
-      background: linear-gradient(180deg, rgba(255,255,255,.02), rgba(255,255,255,.0));
-      border: 1px solid var(--border);
-      border-radius: 16px;
-      padding: 14px;
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-      transition: .2s ease;
+      background: linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,0));
+      border: 1px solid var(--line); border-radius: 16px; padding: 14px;
+      display: flex; flex-direction: column; gap: 10px; transition: .2s ease;
     }
-    .card:hover { transform: translateY(-2px); border-color: #3552a8; }
-    .card h3 { font-size: 17px; }
-    .tag { color: var(--accent2); font-weight: 600; font-size: 12px; }
-    .desc { color: var(--muted); font-size: 14px; line-height: 1.5; min-height: 64px; }
-    .links { display: flex; gap: 8px; flex-wrap: wrap; margin-top: auto; }
+    .card:hover { transform: translateY(-3px); border-color: #3e5ebd; }
+    .tag { color: var(--acc2); font-size: 12px; font-weight: 700; }
+    .card h3 { font-size: 18px; line-height: 1.25; }
+    .desc { color: var(--muted); font-size: 14px; line-height: 1.5; min-height: 84px; }
+    .result {
+      border-top: 1px dashed var(--line); padding-top: 8px;
+      color: #c8d5ff; font-size: 13px; line-height: 1.45;
+    }
+    .links { margin-top: auto; display: flex; gap: 8px; flex-wrap: wrap; }
     .btn {
-      border: 1px solid var(--border);
-      color: var(--text);
-      text-decoration: none;
-      padding: 8px 10px;
-      border-radius: 10px;
-      font-size: 13px;
-      transition: .2s ease;
-      background: rgba(12,18,37,.5);
+      text-decoration: none; font-size: 13px; padding: 8px 10px; border-radius: 10px;
+      border: 1px solid var(--line); color: var(--text); transition: .2s;
+      background: rgba(11,16,36,.6);
     }
-    .btn:hover { border-color: var(--accent); color: #fff; }
-    .btn.primary { background: linear-gradient(135deg, var(--accent), #7aa0ff); border: none; color: #fff; }
-    .section-title { margin-top: 26px; font-size: 20px; margin-bottom: 10px; }
-    .note {
-      border: 1px dashed var(--border);
-      border-radius: 12px;
-      padding: 12px;
-      color: var(--muted);
-      line-height: 1.5;
-      font-size: 14px;
+    .btn:hover { border-color: var(--acc); color: #fff; }
+    .btn.primary { border: none; background: linear-gradient(135deg, var(--acc), #8bb2ff); color: #fff; }
+
+    .case {
+      border: 1px solid var(--line); border-radius: 14px; padding: 14px;
+      background: linear-gradient(180deg, rgba(255,255,255,.02), rgba(255,255,255,0));
+      color: var(--muted); line-height: 1.55; font-size: 14px;
     }
-    .footer { margin-top: 24px; color: var(--muted); font-size: 13px; }
-    @media (max-width: 920px) { .grid { grid-template-columns: repeat(2, minmax(0,1fr)); } }
-    @media (max-width: 620px) { .grid { grid-template-columns: 1fr; } .desc { min-height: auto; } }
+    .footer { margin-top: 24px; font-size: 13px; color: #8ea2d8; }
+
+    @media (max-width: 980px) { .grid { grid-template-columns: repeat(2, minmax(0,1fr)); } }
+    @media (max-width: 640px) {
+      .grid { grid-template-columns: 1fr; }
+      .desc { min-height: auto; }
+      .topbar { align-items: flex-start; flex-direction: column; }
+    }
   </style>
 </head>
 <body>
   <main class="wrap">
+    <header class="topbar">
+      <div class="brand">FilKesl <span>Portfolio</span></div>
+      <nav class="nav">
+        <a class="primary" href="./">Работы</a>
+        <a href="./about.html">Обо мне + стек</a>
+      </nav>
+    </header>
+
     <section class="hero">
-      <h1 class="title">Портфолио: сайты и automation</h1>
+      <h1 class="title">Продуктовое портфолио: сайты и automation</h1>
       <p class="subtitle">
-        Fullstack-разработка под ключ: лендинги в разных нишах, чистая вёрстка, адаптив, интерактив, а также Telegram-automation.
-        Ниже — актуальные демо-проекты, которые можно открыть по прямой ссылке.
+        Я разрабатываю сайты под ключ и автоматизацию для бизнеса: от конверсионных лендингов до Telegram-ботов и backend-сервисов.
+        Ниже — живые демо-проекты, которые можно открыть и проверить.
       </p>
       <div class="meta">
-        <span class="chip">7 лендингов</span>
+        <span class="chip">7 нишевых лендингов</span>
         <span class="chip">1 automation-кейс</span>
         <span class="chip">HTML/CSS/JS + Python/Node.js</span>
+        <span class="chip">Mobile-first</span>
       </div>
     </section>
 
-    <section>
-      <h2 class="section-title">Лендинги</h2>
-      <div class="grid">
-        <article class="card">
-          <span class="tag">Медицина</span>
-          <h3>Стоматологическая клиника</h3>
-          <p class="desc">Оффер на бесплатную диагностику, цены на имплантацию/виниры/отбеливание, форма записи и конверсионные CTA.</p>
-          <div class="links">
-            <a class="btn primary" href="./stomClinick/" target="_blank" rel="noopener noreferrer">Открыть демо</a>
-            <a class="btn" href="./stomClinick/index.html" target="_blank" rel="noopener noreferrer">Прямая ссылка</a>
-          </div>
-        </article>
-
-        <article class="card">
-          <span class="tag">Стройка</span>
-          <h3>Натяжные потолки</h3>
-          <p class="desc">Каталог типов потолков (матовые/глянцевые/тканевые), цены за м², акция “замер бесплатно”, форма заявки.</p>
-          <div class="links">
-            <a class="btn primary" href="./stretch%D0%A1eiling/" target="_blank" rel="noopener noreferrer">Открыть демо</a>
-            <a class="btn" href="./stretch%D0%A1eiling/index.html" target="_blank" rel="noopener noreferrer">Прямая ссылка</a>
-          </div>
-        </article>
-
-        <article class="card">
-          <span class="tag">Юридические услуги</span>
-          <h3>Банкротство физических лиц</h3>
-          <p class="desc">Описание процедуры, этапы, выгоды списания долгов, FAQ и форма на бесплатную консультацию.</p>
-          <div class="links">
-            <a class="btn primary" href="./Bankruptcy/" target="_blank" rel="noopener noreferrer">Открыть демо</a>
-            <a class="btn" href="./Bankruptcy/index.html" target="_blank" rel="noopener noreferrer">Прямая ссылка</a>
-          </div>
-        </article>
-
-        <article class="card">
-          <span class="tag">EdTech</span>
-          <h3>Курс по профессии</h3>
-          <p class="desc">Программа, формат обучения, стоимость и запись на бесплатный вебинар (дизайн/маркетинг/программирование).</p>
-          <div class="links">
-            <a class="btn primary" href="./profession/" target="_blank" rel="noopener noreferrer">Открыть демо</a>
-            <a class="btn" href="./profession/index.html" target="_blank" rel="noopener noreferrer">Прямая ссылка</a>
-          </div>
-        </article>
-
-        <article class="card">
-          <span class="tag">Психология</span>
-          <h3>Психолог / психотерапевт</h3>
-          <p class="desc">Направления работы: тревога, выгорание, отношения; онлайн/офлайн-сессии; мягкий CTA на запись.</p>
-          <div class="links">
-            <a class="btn primary" href="./psycho/" target="_blank" rel="noopener noreferrer">Открыть демо</a>
-            <a class="btn" href="./psycho/index.html" target="_blank" rel="noopener noreferrer">Прямая ссылка</a>
-          </div>
-        </article>
-
-        <article class="card">
-          <span class="tag">Недвижимость</span>
-          <h3>Агентство недвижимости</h3>
-          <p class="desc">Бесплатная оценка квартиры, услуги покупки/продажи/аренды, блок по новостройке и лид-форма.</p>
-          <div class="links">
-            <a class="btn primary" href="./realEstate/" target="_blank" rel="noopener noreferrer">Открыть демо</a>
-            <a class="btn" href="./realEstate/index.html" target="_blank" rel="noopener noreferrer">Прямая ссылка</a>
-          </div>
-        </article>
-
-        <article class="card">
-          <span class="tag">Digital</span>
-          <h3>Веб-студия (сайт под ключ)</h3>
-          <p class="desc">Услуги, портфолио, этапы, сроки и стоимость разработки. Основной CTA — заявка на бриф.</p>
-          <div class="links">
-            <a class="btn primary" href="./marketing/" target="_blank" rel="noopener noreferrer">Открыть демо</a>
-            <a class="btn" href="./marketing/index.html" target="_blank" rel="noopener noreferrer">Прямая ссылка</a>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section>
-      <h2 class="section-title">Automation-кейс</h2>
+    <h2 class="section-title">Лендинги</h2>
+    <section class="grid">
       <article class="card">
-        <span class="tag">Python / Telegram</span>
-        <h3>Автопарсер заказов в Telegram-боте</h3>
-        <p class="desc">Сервис мониторит новые заказы на фриланс-биржах, фильтрует по ключевым словам и отправляет уведомления в Telegram в реальном времени.</p>
-        <div class="note">
-          Если площадка портфолио не поддерживает приватные репозитории/сервисы, укажи этот кейс как “Private demo on request” и прикладывай скринкаст/скриншоты.
+        <span class="tag">Медицина</span>
+        <h3>Стоматологическая клиника</h3>
+        <p class="desc">Конверсионный лендинг с оффером на бесплатную диагностику, блоком услуг (имплантация/виниры/отбеливание), анимациями и формой записи.</p>
+        <div class="result">Фокус: заявка с первого экрана, доверие через цифры, понятная структура цен.</div>
+        <div class="links">
+          <a class="btn primary" href="./stomClinick/" target="_blank" rel="noopener noreferrer">Открыть демо</a>
+          <a class="btn" href="./stomClinick/index.html" target="_blank" rel="noopener noreferrer">Прямая ссылка</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <span class="tag">Строительство</span>
+        <h3>Натяжные потолки</h3>
+        <p class="desc">Лендинг с акцентом на типы потолков (матовый/глянцевый/тканевый), стоимость за м² и акцию “бесплатный замер”.</p>
+        <div class="result">Фокус: быстрое принятие решения, понятные тарифы, высокая конверсия в звонок/заявку.</div>
+        <div class="links">
+          <a class="btn primary" href="./stretch%D0%A1eiling/" target="_blank" rel="noopener noreferrer">Открыть демо</a>
+          <a class="btn" href="./stretch%D0%A1eiling/index.html" target="_blank" rel="noopener noreferrer">Прямая ссылка</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <span class="tag">Юридические услуги</span>
+        <h3>Банкротство физических лиц</h3>
+        <p class="desc">Структурный лендинг: оффер, этапы процедуры, выгоды списания долгов, FAQ и форма на бесплатную консультацию.</p>
+        <div class="result">Фокус: снижение тревоги клиента, прозрачность этапов, экспертная подача.</div>
+        <div class="links">
+          <a class="btn primary" href="./Bankruptcy/" target="_blank" rel="noopener noreferrer">Открыть демо</a>
+          <a class="btn" href="./Bankruptcy/index.html" target="_blank" rel="noopener noreferrer">Прямая ссылка</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <span class="tag">EdTech</span>
+        <h3>Курс по профессии</h3>
+        <p class="desc">Лендинг онлайн-курса с программой, форматом обучения, стоимостью и CTA на регистрацию в бесплатный вебинар.</p>
+        <div class="result">Фокус: прогрев через программу и ценность обучения, конверсия в лид.</div>
+        <div class="links">
+          <a class="btn primary" href="./profession/" target="_blank" rel="noopener noreferrer">Открыть демо</a>
+          <a class="btn" href="./profession/index.html" target="_blank" rel="noopener noreferrer">Прямая ссылка</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <span class="tag">Психология</span>
+        <h3>Психолог / психотерапевт</h3>
+        <p class="desc">Мягкий экспертный лендинг: направления работы (тревога, выгорание, отношения), форматы сессий и запись на консультацию.</p>
+        <div class="result">Фокус: доверительная коммуникация, бережный UX, снижение барьера к записи.</div>
+        <div class="links">
+          <a class="btn primary" href="./psycho/" target="_blank" rel="noopener noreferrer">Открыть демо</a>
+          <a class="btn" href="./psycho/index.html" target="_blank" rel="noopener noreferrer">Прямая ссылка</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <span class="tag">Недвижимость</span>
+        <h3>Агентство недвижимости</h3>
+        <p class="desc">Лендинг с заявкой на бесплатную оценку квартиры, услугами покупки/продажи/аренды и блоком новостройки (ЖК).</p>
+        <div class="result">Фокус: лидогенерация по “тёплому” запросу, доверие через кейсовую подачу.</div>
+        <div class="links">
+          <a class="btn primary" href="./realEstate/" target="_blank" rel="noopener noreferrer">Открыть демо</a>
+          <a class="btn" href="./realEstate/index.html" target="_blank" rel="noopener noreferrer">Прямая ссылка</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <span class="tag">Digital / B2B</span>
+        <h3>Веб-студия (сайт под ключ)</h3>
+        <p class="desc">Лендинг-визитка студии: услуги, портфолио, этапы, сроки и стоимость. Основной CTA — отправка брифа.</p>
+        <div class="result">Фокус: продажа экспертизы через кейсы и прозрачный процесс разработки.</div>
+        <div class="links">
+          <a class="btn primary" href="./marketing/" target="_blank" rel="noopener noreferrer">Открыть демо</a>
+          <a class="btn" href="./marketing/index.html" target="_blank" rel="noopener noreferrer">Прямая ссылка</a>
         </div>
       </article>
     </section>
 
-    <p class="footer">Сделано для быстрого показа клиентам: одна ссылка на всё портфолио.</p>
+    <h2 class="section-title">Automation-кейс</h2>
+    <section class="case">
+      <p><strong style="color: var(--text);">Автопарсер заказов в Telegram-боте</strong> — сервис мониторит свежие заказы с фриланс-площадок, фильтрует по ключевым словам и отправляет уведомления в Telegram в реальном времени.</p>
+      <p style="margin-top:8px;">Стек: Python, aiogram/python-telegram-bot, парсинг, фильтрация, очереди задач, логирование, деплой.</p>
+      <p style="margin-top:8px;">Формат демонстрации на бирже: скринкаст + скриншоты + описание бизнес-эффекта.</p>
+    </section>
+
+    <p class="footer">Одна ссылка для клиентов: открыть, посмотреть демо, оценить качество и стиль работы.</p>
   </main>
 </body>
 </html>

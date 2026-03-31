@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Обо мне + стек | FilKesl Portfolio</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #070b1a; --text: #ecf1ff; --muted: #a4b3dd; --line: #223267;
+      --card: #101a3d; --acc: #5f8fff; --acc2: #1dd3c6; --ok: #2dd4bf;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(900px 400px at 5% -10%, #243f89 0%, transparent 60%),
+        radial-gradient(900px 400px at 100% 0%, #123b54 0%, transparent 60%),
+        var(--bg);
+      min-height: 100vh;
+    }
+    .wrap { max-width: 1100px; margin: 0 auto; padding: 26px 16px 40px; }
+    .topbar { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 18px; }
+    .brand { font-weight: 800; font-size: 19px; letter-spacing: -0.02em; }
+    .brand span { color: var(--acc2); }
+    .nav { display: flex; gap: 8px; flex-wrap: wrap; }
+    .nav a {
+      text-decoration: none; color: var(--muted); border: 1px solid var(--line);
+      padding: 8px 10px; border-radius: 10px; font-size: 13px; transition: .2s;
+      background: rgba(16,26,61,.55);
+    }
+    .nav a:hover { border-color: #4d6ccc; color: #fff; }
+    .nav a.primary { background: linear-gradient(135deg, var(--acc), #8bb2ff); color: #fff; border: none; }
+
+    .hero h1 { font-size: clamp(30px, 5vw, 46px); line-height: 1.04; font-weight: 900; letter-spacing: -0.03em; }
+    .hero p { color: var(--muted); margin-top: 12px; line-height: 1.6; max-width: 860px; }
+
+    .grid { margin-top: 18px; display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    .card {
+      background: linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,0));
+      border: 1px solid var(--line); border-radius: 16px; padding: 16px;
+    }
+    .card h2 { font-size: 20px; margin-bottom: 10px; letter-spacing: -0.01em; }
+    .list { display: grid; gap: 8px; color: var(--muted); }
+    .list p { line-height: 1.55; }
+
+    .stack { margin-top: 8px; display: flex; flex-wrap: wrap; gap: 8px; }
+    .chip {
+      padding: 6px 10px; border-radius: 999px; border: 1px solid var(--line);
+      color: #c7d5ff; font-size: 12px; background: rgba(16,26,61,.55);
+    }
+    .chip.accent { border-color: #2d5ad1; color: #fff; }
+
+    .kpi { margin-top: 12px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+    .kpi div { border: 1px dashed var(--line); border-radius: 10px; padding: 10px; }
+    .kpi strong { display: block; font-size: 20px; letter-spacing: -0.02em; }
+    .kpi span { color: var(--muted); font-size: 12px; }
+
+    .cta {
+      margin-top: 14px;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 14px;
+      color: var(--muted);
+      line-height: 1.55;
+    }
+    .cta .buttons { margin-top: 10px; display: flex; gap: 8px; flex-wrap: wrap; }
+    .btn {
+      text-decoration: none; font-size: 13px; padding: 8px 10px; border-radius: 10px;
+      border: 1px solid var(--line); color: var(--text); transition: .2s;
+      background: rgba(11,16,36,.6);
+    }
+    .btn:hover { border-color: var(--acc); color: #fff; }
+    .btn.primary { border: none; background: linear-gradient(135deg, var(--acc), #8bb2ff); color: #fff; }
+
+    .footer { margin-top: 22px; color: #8ea2d8; font-size: 13px; }
+
+    @media (max-width: 800px) {
+      .grid { grid-template-columns: 1fr; }
+      .kpi { grid-template-columns: 1fr; }
+      .topbar { align-items: flex-start; flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <header class="topbar">
+      <div class="brand">FilKesl <span>Portfolio</span></div>
+      <nav class="nav">
+        <a href="./index.html">Работы</a>
+        <a class="primary" href="./about.html">Обо мне + стек</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <h1>Senior Fullstack Developer</h1>
+      <p>
+        Разрабатываю сайты и web-сервисы под ключ: от конверсионных лендингов и корпоративных сайтов
+        до backend/API, Telegram-ботов и автоматизации процессов. Работаю как с визуальной частью
+        (UX/UI + frontend), так и с серверной логикой, интеграциями и деплоем.
+      </p>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <h2>Что я делаю</h2>
+        <div class="list">
+          <p>- Лендинги и многостраничные сайты с фокусом на конверсию.</p>
+          <p>- Backend/API (REST, GraphQL, WebSocket), интеграции и автоматизация.</p>
+          <p>- Telegram-боты для продаж, уведомлений и внутренних процессов.</p>
+          <p>- Парсинг и сбор данных (Selenium, Playwright, BeautifulSoup).</p>
+          <p>- Деплой, Docker, поддержка и развитие проекта после запуска.</p>
+        </div>
+        <div class="kpi">
+          <div><strong>7</strong><span>нишевых лендингов в портфолио</span></div>
+          <div><strong>1</strong><span>automation-кейс с Telegram</span></div>
+          <div><strong>Fullstack</strong><span>frontend + backend + devops</span></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <h2>Технологический стек</h2>
+        <div class="stack">
+          <span class="chip accent">Python</span>
+          <span class="chip">JavaScript</span>
+          <span class="chip">TypeScript</span>
+          <span class="chip">Node.js</span>
+          <span class="chip">FastAPI</span>
+          <span class="chip">Django</span>
+          <span class="chip">Flask</span>
+          <span class="chip">Express.js</span>
+          <span class="chip">React</span>
+          <span class="chip">Next.js</span>
+          <span class="chip">Vue.js</span>
+          <span class="chip">aiogram</span>
+          <span class="chip">python-telegram-bot</span>
+          <span class="chip">Telegraf</span>
+          <span class="chip">REST API</span>
+          <span class="chip">GraphQL</span>
+          <span class="chip">PostgreSQL</span>
+          <span class="chip">MongoDB</span>
+          <span class="chip">Redis</span>
+          <span class="chip">SQLAlchemy</span>
+          <span class="chip">Docker</span>
+          <span class="chip">Docker Compose</span>
+          <span class="chip">asyncio</span>
+          <span class="chip">WebSocket</span>
+          <span class="chip">Selenium</span>
+          <span class="chip">Playwright</span>
+          <span class="chip">BeautifulSoup</span>
+          <span class="chip">Bash</span>
+          <span class="chip">Git</span>
+          <span class="chip">gRPC</span>
+        </div>
+      </article>
+    </section>
+
+    <section class="cta">
+      <p><strong style="color: var(--text);">Формат работы:</strong> начинаем с короткого созвона/брифа, фиксируем задачу, сроки и результат. После — прозрачные этапы разработки, регулярные апдейты и рабочий релиз.</p>
+      <div class="buttons">
+        <a class="btn primary" href="./index.html">Смотреть проекты</a>
+        <a class="btn" href="mailto:hello@pixelcraft.ru">Написать на email</a>
+      </div>
+    </section>
+
+    <p class="footer">Подходит для размещения ссылки в профиле Kwork / FL / Fiverr / Upwork.</p>
+  </main>
+</body>
+</html>
