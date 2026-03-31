@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DentaPro — Стоматология нового поколения</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header" id="header">
+    <div class="container header__inner">
+        <a href="#" class="logo">
+            <svg class="logo__icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16 2C12.5 2 10 4 9 6C8 8 7 11 8 15C9 19 10 23 12 27C13.5 30 15 31 16 31C17 31 18.5 30 20 27C22 23 23 19 24 15C25 11 24 8 23 6C22 4 19.5 2 16 2Z" fill="currentColor"/>
+                <path d="M16 2C14 2 12.5 3.5 12 5C13 4.5 14.5 4 16 4C17.5 4 19 4.5 20 5C19.5 3.5 18 2 16 2Z" fill="rgba(255,255,255,0.3)"/>
+            </svg>
+            <span class="logo__text">DentaPro</span>
+        </a>
+        <nav class="nav" id="nav">
+            <a href="#services" class="nav__link">Услуги</a>
+            <a href="#benefits" class="nav__link">Преимущества</a>
+            <a href="#offer" class="nav__link">Акция</a>
+            <a href="#contacts" class="nav__link">Контакты</a>
+        </nav>
+        <a href="#contacts" class="btn btn--sm btn--header">Записаться</a>
+        <button class="burger" id="burger" aria-label="Меню">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</header>
+
+<!-- BLOCK 1: HERO -->
+<section class="hero" id="hero">
+    <div class="container hero__inner">
+        <div class="hero__content">
+            <div class="hero__badge">Первичная диагностика — бесплатно</div>
+            <h1 class="hero__title">Улыбка, которой хочется <span class="gradient-text">делиться</span></h1>
+            <p class="hero__subtitle">Импланты, виниры и отбеливание от ведущих стоматологов города. Без боли, с гарантией результата и рассрочкой 0%.</p>
+            <div class="hero__actions">
+                <a href="#contacts" class="btn btn--primary btn--lg">Записаться бесплатно</a>
+                <a href="#services" class="btn btn--outline btn--lg">Смотреть цены</a>
+            </div>
+            <div class="hero__stats">
+                <div class="stat">
+                    <span class="stat__number" data-target="12">0</span>
+                    <span class="stat__label">лет опыта</span>
+                </div>
+                <div class="stat">
+                    <span class="stat__number" data-target="8500">0</span>
+                    <span class="stat__label">довольных пациентов</span>
+                </div>
+                <div class="stat">
+                    <span class="stat__number" data-target="98">0</span>
+                    <span class="stat__suffix">%</span>
+                    <span class="stat__label">рекомендуют нас</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero__visual">
+            <div class="hero__circle"></div>
+            <div class="hero__tooth">
+                <svg viewBox="0 0 200 260" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M100 10C72 10 52 28 44 44C36 60 30 86 38 118C46 150 58 186 72 218C82 240 92 252 100 252C108 252 118 240 128 218C142 186 154 150 162 118C170 86 164 60 156 44C148 28 128 10 100 10Z" fill="url(#toothGrad)" stroke="rgba(255,255,255,0.2)" stroke-width="2"/>
+                    <path d="M100 10C84 10 72 22 68 34C76 28 88 24 100 24C112 24 124 28 132 34C128 22 116 10 100 10Z" fill="rgba(255,255,255,0.15)"/>
+                    <ellipse cx="80" cy="90" rx="12" ry="8" fill="rgba(255,255,255,0.08)"/>
+                    <ellipse cx="120" cy="90" rx="12" ry="8" fill="rgba(255,255,255,0.08)"/>
+                    <defs>
+                        <linearGradient id="toothGrad" x1="44" y1="10" x2="162" y2="252" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#38BDF8"/>
+                            <stop offset="1" stop-color="#6366F1"/>
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <div class="hero__sparkle hero__sparkle--1"></div>
+                <div class="hero__sparkle hero__sparkle--2"></div>
+                <div class="hero__sparkle hero__sparkle--3"></div>
+            </div>
+        </div>
+    </div>
+    <div class="hero__wave">
+        <svg viewBox="0 0 1440 120" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 60L48 54C96 48 192 36 288 30C384 24 480 24 576 33C672 42 768 60 864 66C960 72 1056 66 1152 54C1248 42 1344 24 1392 15L1440 6V120H0Z" fill="#ffffff"/>
+        </svg>
+    </div>
+</section>
+
+<!-- BLOCK 2: SERVICES -->
+<section class="services" id="services">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag">Наши услуги</span>
+            <h2 class="section-title">Всё для идеальной улыбки</h2>
+            <p class="section-desc">Три главных направления, которые выбирают наши пациенты</p>
+        </div>
+        <div class="services__grid">
+            <div class="service-card" data-aos>
+                <div class="service-card__icon">
+                    <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="48" height="48" rx="16" fill="currentColor" opacity="0.1"/>
+                        <path d="M24 12L24 36M24 12L20 16M24 12L28 16" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M16 24H32" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+                        <rect x="18" y="28" width="12" height="6" rx="2" stroke="currentColor" stroke-width="2" fill="none"/>
+                    </svg>
+                </div>
+                <h3 class="service-card__title">Имплантация</h3>
+                <p class="service-card__desc">Восстановим утраченные зубы за 1 визит. Импланты премиум-класса с пожизненной гарантией на титановый корень.</p>
+                <div class="service-card__price">
+                    <span class="service-card__price-from">от</span>
+                    <span class="service-card__price-value">28 000 ₽</span>
+                </div>
+                <ul class="service-card__features">
+                    <li>Безболезненная установка</li>
+                    <li>Приживаемость 99,2%</li>
+                    <li>Рассрочка 0% до 24 мес.</li>
+                </ul>
+                <a href="#contacts" class="btn btn--primary btn--full">Узнать подробнее</a>
+            </div>
+
+            <div class="service-card service-card--featured" data-aos>
+                <div class="service-card__badge">Хит сезона</div>
+                <div class="service-card__icon">
+                    <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="48" height="48" rx="16" fill="currentColor" opacity="0.1"/>
+                        <path d="M15 32C15 32 18 28 24 28C30 28 33 32 33 32" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+                        <rect x="17" y="18" width="4" height="8" rx="2" stroke="currentColor" stroke-width="2" fill="none"/>
+                        <rect x="27" y="18" width="4" height="8" rx="2" stroke="currentColor" stroke-width="2" fill="none"/>
+                        <path d="M22 20H26" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <h3 class="service-card__title">Виниры</h3>
+                <p class="service-card__desc">Голливудская улыбка за 2 посещения. Ультратонкие керамические накладки — естественный вид и прочность на 15+ лет.</p>
+                <div class="service-card__price">
+                    <span class="service-card__price-from">от</span>
+                    <span class="service-card__price-value">21 000 ₽</span>
+                </div>
+                <ul class="service-card__features">
+                    <li>E-max керамика</li>
+                    <li>Минимальная обточка</li>
+                    <li>Подбор цвета по шкале VITA</li>
+                </ul>
+                <a href="#contacts" class="btn btn--primary btn--full">Узнать подробнее</a>
+            </div>
+
+            <div class="service-card" data-aos>
+                <div class="service-card__icon">
+                    <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="48" height="48" rx="16" fill="currentColor" opacity="0.1"/>
+                        <circle cx="24" cy="24" r="8" stroke="currentColor" stroke-width="2.5" fill="none"/>
+                        <path d="M24 14V12M24 36V34M34 24H36M12 24H14M31 17L33 15M15 33L17 31M31 31L33 33M15 15L17 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <h3 class="service-card__title">Отбеливание</h3>
+                <p class="service-card__desc">До 8 тонов белее за 1 час. Щадящая система ZOOM-4 без повреждения эмали и повышенной чувствительности.</p>
+                <div class="service-card__price">
+                    <span class="service-card__price-from">от</span>
+                    <span class="service-card__price-value">9 900 ₽</span>
+                </div>
+                <ul class="service-card__features">
+                    <li>Результат за 1 сеанс</li>
+                    <li>Эффект до 2 лет</li>
+                    <li>Безопасно для эмали</li>
+                </ul>
+                <a href="#contacts" class="btn btn--primary btn--full">Узнать подробнее</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- BLOCK 3: BENEFITS -->
+<section class="benefits" id="benefits">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag">Почему мы</span>
+            <h2 class="section-title">6 причин выбрать DentaPro</h2>
+        </div>
+        <div class="benefits__grid">
+            <div class="benefit" data-aos>
+                <div class="benefit__num">01</div>
+                <h3 class="benefit__title">Без боли</h3>
+                <p class="benefit__desc">Современная анестезия и седация. Вы не почувствуете дискомфорта даже при сложных процедурах.</p>
+            </div>
+            <div class="benefit" data-aos>
+                <div class="benefit__num">02</div>
+                <h3 class="benefit__title">Гарантия до 10 лет</h3>
+                <p class="benefit__desc">Письменная гарантия на все виды работ. Используем только сертифицированные материалы.</p>
+            </div>
+            <div class="benefit" data-aos>
+                <div class="benefit__num">03</div>
+                <h3 class="benefit__title">Рассрочка 0%</h3>
+                <p class="benefit__desc">Лечение сейчас — оплата частями без переплат. До 24 месяцев от клиники напрямую.</p>
+            </div>
+            <div class="benefit" data-aos>
+                <div class="benefit__num">04</div>
+                <h3 class="benefit__title">3D-диагностика</h3>
+                <p class="benefit__desc">Компьютерная томография и цифровое сканирование прямо в клинике. Точный план лечения за 30 минут.</p>
+            </div>
+            <div class="benefit" data-aos>
+                <div class="benefit__num">05</div>
+                <h3 class="benefit__title">Врачи-эксперты</h3>
+                <p class="benefit__desc">Каждый специалист — с опытом от 8 лет и регулярным обучением в ведущих клиниках Европы.</p>
+            </div>
+            <div class="benefit" data-aos>
+                <div class="benefit__num">06</div>
+                <h3 class="benefit__title">Удобное расположение</h3>
+                <p class="benefit__desc">3 минуты от метро, собственная парковка. Работаем с 8:00 до 21:00, включая выходные.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- BLOCK 4: SPECIAL OFFER -->
+<section class="offer" id="offer">
+    <div class="container offer__inner">
+        <div class="offer__content" data-aos>
+            <span class="section-tag section-tag--light">Специальное предложение</span>
+            <h2 class="offer__title">Бесплатная диагностика + план лечения в подарок</h2>
+            <p class="offer__desc">Запишитесь до конца месяца и получите полное обследование стоимостью 3 500 ₽ — бесплатно. Врач составит индивидуальный план лечения и рассчитает точную стоимость.</p>
+            <div class="offer__includes">
+                <div class="offer__item">
+                    <svg class="offer__check" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    <span>Осмотр и консультация</span>
+                </div>
+                <div class="offer__item">
+                    <svg class="offer__check" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    <span>Панорамный снимок</span>
+                </div>
+                <div class="offer__item">
+                    <svg class="offer__check" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    <span>План лечения с ценами</span>
+                </div>
+                <div class="offer__item">
+                    <svg class="offer__check" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    <span>Подбор рассрочки</span>
+                </div>
+            </div>
+            <a href="#contacts" class="btn btn--white btn--lg">Записаться бесплатно</a>
+        </div>
+        <div class="offer__visual">
+            <div class="offer__price-tag">
+                <span class="offer__price-old">3 500 ₽</span>
+                <span class="offer__price-new">0 ₽</span>
+                <span class="offer__price-label">диагностика</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- BLOCK 5: CONTACTS + FORM -->
+<section class="contacts" id="contacts">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag">Запись на приём</span>
+            <h2 class="section-title">Запишитесь за 30 секунд</h2>
+            <p class="section-desc">Оставьте заявку, и администратор перезвонит вам в течение 10 минут для подтверждения записи</p>
+        </div>
+        <div class="contacts__inner">
+            <form class="form" id="appointmentForm">
+                <div class="form__group">
+                    <label class="form__label" for="name">Ваше имя</label>
+                    <input class="form__input" type="text" id="name" name="name" placeholder="Александр" required>
+                </div>
+                <div class="form__group">
+                    <label class="form__label" for="phone">Телефон</label>
+                    <input class="form__input" type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__" required>
+                </div>
+                <div class="form__group">
+                    <label class="form__label" for="service">Интересующая услуга</label>
+                    <select class="form__input form__select" id="service" name="service">
+                        <option value="" disabled selected>Выберите услугу</option>
+                        <option value="diagnostics">Бесплатная диагностика</option>
+                        <option value="implants">Имплантация</option>
+                        <option value="veneers">Виниры</option>
+                        <option value="whitening">Отбеливание</option>
+                        <option value="other">Другое</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn--primary btn--lg btn--full">
+                    <span class="btn__text">Записаться на приём</span>
+                    <svg class="btn__arrow" viewBox="0 0 24 24" fill="none"><path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </button>
+                <p class="form__note">Нажимая кнопку, вы соглашаетесь с политикой обработки персональных данных</p>
+            </form>
+            <div class="contacts__info">
+                <div class="contacts__block">
+                    <div class="contacts__icon">
+                        <svg viewBox="0 0 24 24" fill="none"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="2"/></svg>
+                    </div>
+                    <div>
+                        <h4 class="contacts__label">Адрес</h4>
+                        <p class="contacts__value">ул. Примерная, 42<br>3 минуты от м. Центральная</p>
+                    </div>
+                </div>
+                <div class="contacts__block">
+                    <div class="contacts__icon">
+                        <svg viewBox="0 0 24 24" fill="none"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" stroke="currentColor" stroke-width="2"/></svg>
+                    </div>
+                    <div>
+                        <h4 class="contacts__label">Телефон</h4>
+                        <p class="contacts__value"><a href="tel:+78001234567">8 (800) 123-45-67</a><br>Бесплатно по РФ</p>
+                    </div>
+                </div>
+                <div class="contacts__block">
+                    <div class="contacts__icon">
+                        <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/><path d="M12 6v6l4 2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                    </div>
+                    <div>
+                        <h4 class="contacts__label">Режим работы</h4>
+                        <p class="contacts__value">Ежедневно: 8:00 — 21:00<br>Без перерывов и выходных</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="container footer__inner">
+        <a href="#" class="logo logo--footer">
+            <svg class="logo__icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16 2C12.5 2 10 4 9 6C8 8 7 11 8 15C9 19 10 23 12 27C13.5 30 15 31 16 31C17 31 18.5 30 20 27C22 23 23 19 24 15C25 11 24 8 23 6C22 4 19.5 2 16 2Z" fill="currentColor"/>
+            </svg>
+            <span class="logo__text">DentaPro</span>
+        </a>
+        <p class="footer__copy">&copy; 2026 DentaPro. Все права защищены. Лицензия ЛО-77-01-012345</p>
+    </div>
+</footer>
+
+<!-- SUCCESS MODAL -->
+<div class="modal" id="modal">
+    <div class="modal__overlay" id="modalOverlay"></div>
+    <div class="modal__content">
+        <div class="modal__icon">
+            <svg viewBox="0 0 64 64" fill="none"><circle cx="32" cy="32" r="30" stroke="currentColor" stroke-width="3"/><path d="M20 32L28 40L44 24" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <h3 class="modal__title">Заявка отправлена!</h3>
+        <p class="modal__desc">Администратор свяжется с вами в течение 10 минут для подтверждения записи.</p>
+        <button class="btn btn--primary btn--lg" id="modalClose">Отлично</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
