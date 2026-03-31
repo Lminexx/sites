@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Портфолио Fullstack Developer</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #0b1020;
+      --card: #111831;
+      --text: #e6ecff;
+      --muted: #9fb0d9;
+      --accent: #5b8cff;
+      --accent2: #2dd4bf;
+      --border: #22305f;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      background: radial-gradient(1200px 600px at 20% -10%, #1b2a57 0%, var(--bg) 50%);
+      color: var(--text);
+      min-height: 100vh;
+    }
+    .wrap { max-width: 1150px; margin: 0 auto; padding: 28px 18px 42px; }
+    .hero { margin-bottom: 20px; }
+    .title { font-size: clamp(28px, 5vw, 46px); line-height: 1.05; font-weight: 800; letter-spacing: -0.02em; }
+    .subtitle { margin-top: 10px; color: var(--muted); max-width: 760px; line-height: 1.55; }
+    .meta {
+      margin-top: 14px;
+      display: inline-flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    .chip {
+      font-size: 13px;
+      padding: 6px 10px;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      color: var(--muted);
+      background: rgba(17,24,49,.55);
+    }
+    .grid {
+      margin-top: 18px;
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0,1fr));
+      gap: 14px;
+    }
+    .card {
+      background: linear-gradient(180deg, rgba(255,255,255,.02), rgba(255,255,255,.0));
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      transition: .2s ease;
+    }
+    .card:hover { transform: translateY(-2px); border-color: #3552a8; }
+    .card h3 { font-size: 17px; }
+    .tag { color: var(--accent2); font-weight: 600; font-size: 12px; }
+    .desc { color: var(--muted); font-size: 14px; line-height: 1.5; min-height: 64px; }
+    .links { display: flex; gap: 8px; flex-wrap: wrap; margin-top: auto; }
+    .btn {
+      border: 1px solid var(--border);
+      color: var(--text);
+      text-decoration: none;
+      padding: 8px 10px;
+      border-radius: 10px;
+      font-size: 13px;
+      transition: .2s ease;
+      background: rgba(12,18,37,.5);
+    }
+    .btn:hover { border-color: var(--accent); color: #fff; }
+    .btn.primary { background: linear-gradient(135deg, var(--accent), #7aa0ff); border: none; color: #fff; }
+    .section-title { margin-top: 26px; font-size: 20px; margin-bottom: 10px; }
+    .note {
+      border: 1px dashed var(--border);
+      border-radius: 12px;
+      padding: 12px;
+      color: var(--muted);
+      line-height: 1.5;
+      font-size: 14px;
+    }
+    .footer { margin-top: 24px; color: var(--muted); font-size: 13px; }
+    @media (max-width: 920px) { .grid { grid-template-columns: repeat(2, minmax(0,1fr)); } }
+    @media (max-width: 620px) { .grid { grid-template-columns: 1fr; } .desc { min-height: auto; } }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <h1 class="title">Портфолио: сайты и automation</h1>
+      <p class="subtitle">
+        Fullstack-разработка под ключ: лендинги в разных нишах, чистая вёрстка, адаптив, интерактив, а также Telegram-automation.
+        Ниже — актуальные демо-проекты, которые можно открыть по прямой ссылке.
+      </p>
+      <div class="meta">
+        <span class="chip">7 лендингов</span>
+        <span class="chip">1 automation-кейс</span>
+        <span class="chip">HTML/CSS/JS + Python/Node.js</span>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-title">Лендинги</h2>
+      <div class="grid">
+        <article class="card">
+          <span class="tag">Медицина</span>
+          <h3>Стоматологическая клиника</h3>
+          <p class="desc">Оффер на бесплатную диагностику, цены на имплантацию/виниры/отбеливание, форма записи и конверсионные CTA.</p>
+          <div class="links">
+            <a class="btn primary" href="./stomClinick/" target="_blank" rel="noopener noreferrer">Открыть демо</a>
+            <a class="btn" href="./stomClinick/index.html" target="_blank" rel="noopener noreferrer">Прямая ссылка</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <span class="tag">Стройка</span>
+          <h3>Натяжные потолки</h3>
+          <p class="desc">Каталог типов потолков (матовые/глянцевые/тканевые), цены за м², акция “замер бесплатно”, форма заявки.</p>
+          <div class="links">
+            <a class="btn primary" href="./stretch%D0%A1eiling/" target="_blank" rel="noopener noreferrer">Открыть демо</a>
+            <a class="btn" href="./stretch%D0%A1eiling/index.html" target="_blank" rel="noopener noreferrer">Прямая ссылка</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <span class="tag">Юридические услуги</span>
+          <h3>Банкротство физических лиц</h3>
+          <p class="desc">Описание процедуры, этапы, выгоды списания долгов, FAQ и форма на бесплатную консультацию.</p>
+          <div class="links">
+            <a class="btn primary" href="./Bankruptcy/" target="_blank" rel="noopener noreferrer">Открыть демо</a>
+            <a class="btn" href="./Bankruptcy/index.html" target="_blank" rel="noopener noreferrer">Прямая ссылка</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <span class="tag">EdTech</span>
+          <h3>Курс по профессии</h3>
+          <p class="desc">Программа, формат обучения, стоимость и запись на бесплатный вебинар (дизайн/маркетинг/программирование).</p>
+          <div class="links">
+            <a class="btn primary" href="./profession/" target="_blank" rel="noopener noreferrer">Открыть демо</a>
+            <a class="btn" href="./profession/index.html" target="_blank" rel="noopener noreferrer">Прямая ссылка</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <span class="tag">Психология</span>
+          <h3>Психолог / психотерапевт</h3>
+          <p class="desc">Направления работы: тревога, выгорание, отношения; онлайн/офлайн-сессии; мягкий CTA на запись.</p>
+          <div class="links">
+            <a class="btn primary" href="./psycho/" target="_blank" rel="noopener noreferrer">Открыть демо</a>
+            <a class="btn" href="./psycho/index.html" target="_blank" rel="noopener noreferrer">Прямая ссылка</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <span class="tag">Недвижимость</span>
+          <h3>Агентство недвижимости</h3>
+          <p class="desc">Бесплатная оценка квартиры, услуги покупки/продажи/аренды, блок по новостройке и лид-форма.</p>
+          <div class="links">
+            <a class="btn primary" href="./realEstate/" target="_blank" rel="noopener noreferrer">Открыть демо</a>
+            <a class="btn" href="./realEstate/index.html" target="_blank" rel="noopener noreferrer">Прямая ссылка</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <span class="tag">Digital</span>
+          <h3>Веб-студия (сайт под ключ)</h3>
+          <p class="desc">Услуги, портфолио, этапы, сроки и стоимость разработки. Основной CTA — заявка на бриф.</p>
+          <div class="links">
+            <a class="btn primary" href="./marketing/" target="_blank" rel="noopener noreferrer">Открыть демо</a>
+            <a class="btn" href="./marketing/index.html" target="_blank" rel="noopener noreferrer">Прямая ссылка</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-title">Automation-кейс</h2>
+      <article class="card">
+        <span class="tag">Python / Telegram</span>
+        <h3>Автопарсер заказов в Telegram-боте</h3>
+        <p class="desc">Сервис мониторит новые заказы на фриланс-биржах, фильтрует по ключевым словам и отправляет уведомления в Telegram в реальном времени.</p>
+        <div class="note">
+          Если площадка портфолио не поддерживает приватные репозитории/сервисы, укажи этот кейс как “Private demo on request” и прикладывай скринкаст/скриншоты.
+        </div>
+      </article>
+    </section>
+
+    <p class="footer">Сделано для быстрого показа клиентам: одна ссылка на всё портфолио.</p>
+  </main>
+</body>
+</html>
